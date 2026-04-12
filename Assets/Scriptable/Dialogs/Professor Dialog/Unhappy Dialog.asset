@@ -10,25 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 47e8c251aa9a4d95ca6b84096cf8588c, type: 3}
-  m_Name: StartDialog
+  m_Name: Unhappy Dialog
   m_EditorClassIdentifier: Assembly-CSharp::DialogData
   dialogs:
   - id: Begin
-    speaker: Professor
-    text: Bienvenue dans ce nouveau TP ! Aujourd'hui nous allons faire notre propre
-      soda !
+    speaker: Professeur
+    text: Si tu as des retours a me faire vis-a-vis du sujet, viens me voir a la
+      fin du TP.
     cameraPosition: {x: 0, y: 0, z: 0}
-    statsToChange: 
-    amount: 0
-    choices:
-    - text: 
-      idToGo: Prof1
-    - text: End
-      idToGo: 
-  - id: Prof1
-    speaker: Professor
-    text: Tout d'abord, mettez vous en groupe de 3.
-    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraRotation: {x: 0, y: 0, z: 0}
     statsToChange: 
     amount: 0
     choices: []

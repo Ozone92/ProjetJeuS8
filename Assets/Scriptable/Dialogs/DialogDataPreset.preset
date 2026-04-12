@@ -53,6 +53,18 @@ Preset:
     value: 0
     objectReference: {fileID: 0}
   - target: {fileID: 0}
+    propertyPath: dialogs.Array.data[0].cameraRotation.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: dialogs.Array.data[0].cameraRotation.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: dialogs.Array.data[0].cameraRotation.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
     propertyPath: dialogs.Array.data[0].statsToChange
     value: 
     objectReference: {fileID: 0}
@@ -72,6 +84,10 @@ Preset:
     propertyPath: playerStats
     value: 
     objectReference: {fileID: 11400000, guid: 9f2f0ae3b15e67cdd9a60f8a24eafe79, type: 2}
+  - target: {fileID: 0}
+    propertyPath: dialogCamera
+    value: 
+    objectReference: {fileID: 0}
   m_ExcludedProperties: []
   m_CoupledType:
     m_NativeTypeID: 0

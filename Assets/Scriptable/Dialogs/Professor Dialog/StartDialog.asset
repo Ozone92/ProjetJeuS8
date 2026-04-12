@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47e8c251aa9a4d95ca6b84096cf8588c, type: 3}
+  m_Name: StartDialog
+  m_EditorClassIdentifier: Assembly-CSharp::DialogData
+  dialogs:
+  - id: begin
+    speaker: Professeur
+    text: Bienvenue dans ce nouveau TP ! Aujourd'hui nous allons faire notre propre
+      soda !
+    cameraPosition: {x: 0, y: 3, z: 3}
+    cameraRotation: {x: 10, y: 0, z: 0}
+    statsToChange: 
+    amount: 0
+    choices:
+    - text: Enthousiate
+      idToGo: happy
+    - text: Pas motive
+      idToGo: unhappy
+  - id: happy
+    speaker: Professeur
+    text: Je vois que le sujet vous plait !
+    cameraPosition: {x: 0, y: 3, z: 3}
+    cameraRotation: {x: 10, y: 0, z: 0}
+    statsToChange: happy
+    amount: 1
+    choices:
+    - text: 
+      idToGo: prof1
+  - id: unhappy
+    speaker: Professeur
+    text: (Je pensais que le sujet leur plairait plus...)
+    cameraPosition: {x: 0, y: 1.5, z: 6.5}
+    cameraRotation: {x: 10, y: 0, z: 0}
+    statsToChange: happy
+    amount: -1
+    choices:
+    - text: 
+      idToGo: prof1
+  - id: prof1
+    speaker: Professeur
+    text: Tout d'abord, mettez vous en groupe de 3.
+    cameraPosition: {x: 0, y: 3, z: 3}
+    cameraRotation: {x: 10, y: 0, z: 0}
+    statsToChange: 
+    amount: 0
+    choices: []
+  dialogBoxPrefab: {fileID: -4762232498145539390, guid: cab5af825cf7e2b7aa72d0051b9ef9a0, type: 3}
+  playerStats: {fileID: 11400000, guid: 9f2f0ae3b15e67cdd9a60f8a24eafe79, type: 2}

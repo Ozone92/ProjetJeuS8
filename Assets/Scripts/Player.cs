@@ -1,26 +1,49 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour, PlayerAction.IPlayerActions
 {
-    public DialogData startDialog;
-    
-    [SerializeField] 
-    private float speed = 1f;
+    [SerializeField] private float speed = 1f;
 
     private Vector2 _direction;
-    
+    private Rigidbody _rb;
+    private GameObject _interactable;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        StartCoroutine(startDialog.Play());
+        _rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector2 movement = _direction * (speed * Time.deltaTime);
-        transform.Translate(movement.x, 0, movement.y);
+        if (!DialogData.InDialog)
+        {
+            _rb.linearVelocity = new Vector3(_direction.x, 0, _direction.y) * speed;
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.TryGetComponent(out IInteractable _)
+            && (
+                _interactable == null ||
+                Vector3.Distance(transform.position, other.gameObject.transform.position) <
+                Vector3.Distance(transform.position, _interactable.transform.position)))
+        {
+            _interactable = other.gameObject;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.TryGetComponent(out IInteractable _) && _interactable == other.gameObject)
+        {
+            _interactable = null;
+        }
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -30,9 +53,9 @@ public class Player : MonoBehaviour, PlayerAction.IPlayerActions
 
     public void OnInteract(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && _interactable && !DialogData.InDialog)
         {
-            Debug.Log("Interact");
+            _interactable.GetComponent<IInteractable>().Interact();
         }
     }
 }

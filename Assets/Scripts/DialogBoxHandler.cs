@@ -16,7 +16,7 @@ public class DialogBoxHandler : MonoBehaviour
         speakerText.text = dialog.speaker;
         dialogText.text = dialog.text;
 
-        if (dialog.choices.Count == 0)
+        if (dialog.choices == null || dialog.choices.Count == 0)
         {
             GameObject button = TMP_DefaultControls.CreateButton( new TMP_DefaultControls.Resources() );
             button.transform.SetParent(buttonContainer.transform);
