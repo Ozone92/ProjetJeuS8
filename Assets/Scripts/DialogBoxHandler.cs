@@ -11,7 +11,7 @@ public class DialogBoxHandler : MonoBehaviour
     [SerializeField] private TMP_Text dialogText;
     [SerializeField] private GameObject buttonContainer;
 
-    public void fill(DialogData.Dialog dialog)
+    public void fill(DialogData.Dialog dialog, PlayerStats stats)
     {
         speakerText.text = dialog.speaker;
         dialogText.text = dialog.text;
@@ -30,14 +30,27 @@ public class DialogBoxHandler : MonoBehaviour
         {
             foreach (var dialogChoice in dialog.choices)
             {
-                GameObject button = TMP_DefaultControls.CreateButton( new TMP_DefaultControls.Resources() );
-                button.transform.SetParent(buttonContainer.transform);
-                button.GetComponentInChildren<TMP_Text>().text = dialogChoice.text != "" ? dialogChoice.text : "Continuer";
-                button.GetComponentInChildren<Button>().onClick.AddListener(() =>
+                foreach (var condition in dialogChoice.minimalCondition)
                 {
-                    ChoiceMade = true;
-                    ChoiceIndex = dialogChoice.idToGo;
-                });
+                    if (stats.Get(condition.name) < condition.amount)
+                    {
+                        continue;
+                    }
+                    
+                    GameObject button = TMP_DefaultControls.CreateButton( new TMP_DefaultControls.Resources() );
+                    button.transform.SetParent(buttonContainer.transform);
+                    button.GetComponentInChildren<TMP_Text>().text = dialogChoice.text != "" ? dialogChoice.text : "Continuer";
+                    button.GetComponentInChildren<Button>().onClick.AddListener(() =>
+                    {
+                        foreach (var statToChange in dialogChoice.statsToChange)
+                        {
+                            stats.Add(statToChange.name, statToChange.amount);
+                        }
+                        
+                        ChoiceMade = true;
+                        ChoiceIndex = dialogChoice.idToGo;
+                    });
+                }
             }
         }
     }

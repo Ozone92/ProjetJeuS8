@@ -12,6 +12,16 @@ public class DialogData : ScriptableObject
     {
         public string text;
         public string idToGo;
+        
+        public List<Stats> statsToChange;
+        public List<Stats> minimalCondition;
+    }
+
+    [System.Serializable]
+    public struct Stats
+    {
+        public string name;
+        public float amount;
     }
     
     [System.Serializable]
@@ -23,9 +33,6 @@ public class DialogData : ScriptableObject
         
         public Vector3 cameraPosition;
         public Vector3 cameraRotation;
-        
-        public string statsToChange;
-        public float amount;
         
         public List<Choice> choices;
         
@@ -39,10 +46,7 @@ public class DialogData : ScriptableObject
 
     public IEnumerator Play()
     {
-        if (InDialog)
-        {
-            yield break;
-        }
+        yield return new WaitUntil(() => !InDialog);
         InDialog = true;
         
         Camera mainCamera = Camera.main;
@@ -69,12 +73,7 @@ public class DialogData : ScriptableObject
             dialogBox.transform.position = dialog.cameraPosition;
             dialogBox.transform.eulerAngles = dialog.cameraRotation;
             
-            if (!string.IsNullOrEmpty(dialog.statsToChange))
-            {
-                playerStats.Add(dialog.statsToChange, dialog.amount);
-            }
-            
-            dialogBox.fill(dialog);
+            dialogBox.fill(dialog, playerStats);
             
             yield return new WaitUntil(() => dialogBox.ChoiceMade);
             

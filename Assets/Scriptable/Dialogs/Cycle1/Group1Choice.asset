@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47e8c251aa9a4d95ca6b84096cf8588c, type: 3}
+  m_Name: Group1Choice
+  m_EditorClassIdentifier: Assembly-CSharp::DialogData
+  dialogs:
+  - id: Begin
+    speaker: HB
+    text: "Alors ? Quelle est la meilleure chose \xE0 faire selon toi ?"
+    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraRotation: {x: 0, y: 0, z: 0}
+    choices:
+    - text: Utiliser du naturel
+      idToGo: Your
+      statsToChange:
+      - name: GroupScore
+        amount: 1
+      - name: TpScore
+        amount: 1
+      - name: CycleFinish1
+        amount: 1
+      minimalCondition:
+      - name: C1G1
+        amount: 1
+    - text: Copier le Coca
+      idToGo: Other
+      statsToChange:
+      - name: GroupScore
+        amount: -1
+      - name: TpScore
+        amount: -1
+      - name: CycleFinish1
+        amount: 1
+      minimalCondition:
+      - name: C1G2
+        amount: 1
+    - text: Transparent avec du sucre
+      idToGo: Other
+      statsToChange:
+      - name: GroupScore
+        amount: -1
+      - name: TpScore
+        amount: 0
+      - name: CycleFinish1
+        amount: 1
+      minimalCondition:
+      - name: C1G3
+        amount: 1
+    - text: Aller voir les autres groupes
+      idToGo: 
+      statsToChange: []
+      minimalCondition: []
+  - id: Other
+    speaker: HB
+    text: Bizarre l'ambiance...
+    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraRotation: {x: 0, y: 0, z: 0}
+    choices:
+    - text: 
+      idToGo: Other2
+      statsToChange: []
+      minimalCondition: []
+  - id: Other2
+    speaker: Nerd
+    text: "Le choix naturel aurait d\xFB s'imposer, mais si tu penses que cette solution
+      est meilleure allons-y. "
+    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraRotation: {x: 0, y: 0, z: 0}
+    choices: []
+  - id: Your
+    speaker: Nerd
+    text: "Je vois que nous sommes sur la m\xEAme longueur d\u2019onde. Le naturel
+      c\u2019est le mieux !"
+    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraRotation: {x: 0, y: 0, z: 0}
+    choices: []
+  dialogBoxPrefab: {fileID: -4762232498145539390, guid: cab5af825cf7e2b7aa72d0051b9ef9a0, type: 3}
+  playerStats: {fileID: 11400000, guid: 9f2f0ae3b15e67cdd9a60f8a24eafe79, type: 2}

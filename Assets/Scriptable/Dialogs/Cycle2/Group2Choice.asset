@@ -1,0 +1,246 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47e8c251aa9a4d95ca6b84096cf8588c, type: 3}
+  m_Name: Group2Choice
+  m_EditorClassIdentifier: Assembly-CSharp::DialogData
+  dialogs:
+  - id: Begin
+    speaker: Bum
+    text: "Les gars moi j\u2019ai jamais fait la vaisselle chez moi, faut pas compter
+      sur moi."
+    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraRotation: {x: 0, y: 0, z: 0}
+    choices:
+    - text: 
+      idToGo: Vous1
+      statsToChange: []
+      minimalCondition: []
+  - id: Vous1
+    speaker: Vous
+    text: "S\xE9rieux t\u2019abuse"
+    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraRotation: {x: 0, y: 0, z: 0}
+    choices:
+    - text: 
+      idToGo: Rival1
+      statsToChange: []
+      minimalCondition: []
+  - id: Rival1
+    speaker: Rival
+    text: "e suis s\xFBr qu\u2019il nettoyait quand m\xEAme mieux que toi. je pr\xE9f\xE8re
+      que ce soit lui que toi"
+    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraRotation: {x: 0, y: 0, z: 0}
+    choices:
+    - text: 
+      idToGo: Vous2
+      statsToChange: []
+      minimalCondition: []
+  - id: Vous2
+    speaker: Vous
+    text: ...
+    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraRotation: {x: 0, y: 0, z: 0}
+    choices:
+    - text: 
+      idToGo: Bum2
+      statsToChange: []
+      minimalCondition: []
+  - id: Bum2
+    speaker: Bum
+    text: "MDR en vrai ca a l\u2019air marrant j'suis chaud"
+    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraRotation: {x: 0, y: 0, z: 0}
+    choices:
+    - text: 
+      idToGo: Vous3
+      statsToChange: []
+      minimalCondition: []
+  - id: Vous3
+    speaker: Vous
+    text: "Sinon rival, si tu veux que ca se passe bien tu peux le faire toi m\xEAme"
+    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraRotation: {x: 0, y: 0, z: 0}
+    choices:
+    - text: 
+      idToGo: Rival2
+      statsToChange: []
+      minimalCondition: []
+  - id: Rival2
+    speaker: Rival
+    text: "T\u2019as vraiment besoin que quelqu\u2019un fasse le travail \xE0 ta
+      place hein"
+    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraRotation: {x: 0, y: 0, z: 0}
+    choices:
+    - text: 
+      idToGo: Choix
+      statsToChange: []
+      minimalCondition: []
+  - id: Choix
+    speaker: Vous
+    text: Qui s'en occupe ?
+    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraRotation: {x: 0, y: 0, z: 0}
+    choices:
+    - text: Bum
+      idToGo: Bum_Vous1
+      statsToChange:
+      - name: GroupScore
+        amount: 0
+      - name: TpScore
+        amount: -1
+      minimalCondition: []
+    - text: Rival
+      idToGo: Rival_Vous1
+      statsToChange:
+      - name: GroupScore
+        amount: -1
+      - name: TpScore
+        amount: 1
+      minimalCondition: []
+    - text: Vous
+      idToGo: Vous_Vous1
+      statsToChange:
+      - name: DoMinigame2
+        amount: 1
+      minimalCondition: []
+  - id: Bum_Vous1
+    speaker: Vous
+    text: "Bah vazy laissons le bum faire alors. Vu que t\u2019as un pb avec moi."
+    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraRotation: {x: 0, y: 0, z: 0}
+    choices:
+    - text: 
+      idToGo: Bum_Rival1
+      statsToChange: []
+      minimalCondition: []
+  - id: Bum_Rival1
+    speaker: Rival
+    text: "Vaut mieux ca que tu me foires mon tp \xE0 nouveau."
+    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraRotation: {x: 0, y: 0, z: 0}
+    choices:
+    - text: 
+      idToGo: Bum_Bum1
+      statsToChange: []
+      minimalCondition: []
+  - id: Bum_Bum1
+    speaker: Rival
+    text: "Super l\u2019ambiance dans ce groupe les gars. Prenez un peu plus de fun
+      no big deal."
+    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraRotation: {x: 0, y: 0, z: 0}
+    choices:
+    - text: 
+      idToGo: Bum_Vous2
+      statsToChange: []
+      minimalCondition: []
+  - id: Bum_Vous2
+    speaker: Vous
+    text: Oe mb
+    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraRotation: {x: 0, y: 0, z: 0}
+    choices:
+    - text: 
+      idToGo: Bum_Rival2
+      statsToChange: []
+      minimalCondition: []
+  - id: Bum_Rival2
+    speaker: Rival
+    text: T'as raison
+    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraRotation: {x: 0, y: 0, z: 0}
+    choices:
+    - text: 
+      idToGo: 
+      statsToChange:
+      - name: CycleFinish2
+        amount: 1
+      minimalCondition: []
+  - id: Rival_Vous1
+    speaker: Vous
+    text: "Fais le toi Rival vu que t\u2019as pas l\u2019air de me faire confiance."
+    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraRotation: {x: 0, y: 0, z: 0}
+    choices:
+    - text: 
+      idToGo: Rival_Rival1
+      statsToChange: []
+      minimalCondition: []
+  - id: Rival_Rival1
+    speaker: Rival
+    text: "Difficile de te faire confiance apr\xE8s que t\u2019aies foir\xE9 notre
+      dernier tp"
+    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraRotation: {x: 0, y: 0, z: 0}
+    choices:
+    - text: 
+      idToGo: Rival_Bum1
+      statsToChange: []
+      minimalCondition: []
+  - id: Rival_Bum1
+    speaker: Bum
+    text: "Wah les gars c\u2019est pas si s\xE9rieux"
+    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraRotation: {x: 0, y: 0, z: 0}
+    choices:
+    - text: 
+      idToGo: Rival_Rival2
+      statsToChange: []
+      minimalCondition: []
+  - id: Rival_Rival2
+    speaker: Rival
+    text: Prends des notes je vais te montrer comment on fait.
+    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraRotation: {x: 0, y: 0, z: 0}
+    choices:
+    - text: 
+      idToGo: 
+      statsToChange:
+      - name: CycleFinish2
+        amount: 1
+      minimalCondition: []
+  - id: Vous_Vous1
+    speaker: Vous
+    text: Je vais le faire.
+    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraRotation: {x: 0, y: 0, z: 0}
+    choices:
+    - text: 
+      idToGo: Vous_Rival1
+      statsToChange: []
+      minimalCondition: []
+  - id: Vous_Rival1
+    speaker: Rival
+    text: "T\u2019as int\xE9r\xEAt \xE0 te rattraper pour la derni\xE8re fois alors."
+    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraRotation: {x: 0, y: 0, z: 0}
+    choices:
+    - text: 
+      idToGo: Vous_Bum1
+      statsToChange: []
+      minimalCondition: []
+  - id: Vous_Bum1
+    speaker: Bum
+    text: Moi ca ve va
+    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraRotation: {x: 0, y: 0, z: 0}
+    choices:
+    - text: 
+      idToGo: 
+      statsToChange:
+      - name: CycleFinish2
+        amount: 1
+      minimalCondition: []
+  dialogBoxPrefab: {fileID: -4762232498145539390, guid: cab5af825cf7e2b7aa72d0051b9ef9a0, type: 3}
+  playerStats: {fileID: 11400000, guid: 9f2f0ae3b15e67cdd9a60f8a24eafe79, type: 2}
