@@ -34,6 +34,7 @@ public class Player : MonoBehaviour, PlayerAction.IPlayerActions
                 Vector3.Distance(transform.position, other.gameObject.transform.position) <
                 Vector3.Distance(transform.position, _interactable.transform.position)))
         {
+            Debug.Log($"Switch interactable to ${other.gameObject.name}");
             _interactable = other.gameObject;
         }
     }

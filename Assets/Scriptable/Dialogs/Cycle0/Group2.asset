@@ -20,8 +20,8 @@ MonoBehaviour:
     cameraPosition: {x: 0, y: 0, z: 0}
     cameraRotation: {x: 0, y: 0, z: 0}
     choices:
-    - text: BunText
-      idToGo: 
+    - text: 
+      idToGo: BunText
       statsToChange: []
       minimalCondition: []
   - id: BunText
@@ -31,8 +31,8 @@ MonoBehaviour:
     cameraPosition: {x: 0, y: 0, z: 0}
     cameraRotation: {x: 0, y: 0, z: 0}
     choices:
-    - text: Choix
-      idToGo: 
+    - text: 
+      idToGo: Choix
       statsToChange: []
       minimalCondition: []
   - id: Choix

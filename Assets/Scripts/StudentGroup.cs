@@ -22,15 +22,20 @@ public class StudentGroup : MonoBehaviour, IInteractable
     
     public void Interact()
     {
+        StartCoroutine(LaunchDialog());
+    }
+
+    private IEnumerator LaunchDialog()
+    {
         if (cycleManager.CurrentCycle == 0)
         {
             StartCoroutine(cycle0Dialog.Play());
         }
         else
         {
-            CycleDialog currentDialog = cycleDialogs[cycleManager.CurrentCycle];
+            CycleDialog currentDialog = cycleDialogs[cycleManager.CurrentCycle - 1];
 
-            StartCoroutine(currentDialog.dialog.Play());
+            yield return StartCoroutine(currentDialog.dialog.Play());
 
             if ((int)playerStats.Get("Group") == groupNumber)
             {
@@ -38,5 +43,4 @@ public class StudentGroup : MonoBehaviour, IInteractable
             }
         }
     }
-    
 }

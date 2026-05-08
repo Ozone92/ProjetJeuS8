@@ -46,7 +46,7 @@ public class DialogData : ScriptableObject
 
     public IEnumerator Play()
     {
-        yield return new WaitUntil(() => !InDialog);
+        Debug.Log($"Launch Dialog: ${this.name}");
         InDialog = true;
         
         Camera mainCamera = Camera.main;
