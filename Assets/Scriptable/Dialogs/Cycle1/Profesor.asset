@@ -18,7 +18,7 @@ MonoBehaviour:
     text: "C\u2019est bon les groupes sont faits vous pouvez donc commencer. L\u2019objectif
       de ce TP est de faire un soda. A la fin de la s\xE9ance, vous pourrez go\xFBter
       vos sodas et je vous donnerai une note. "
-    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: 0.065, y: 0.171, z: -0.235}
     cameraRotation: {x: 0, y: 0, z: 0}
     choices:
     - text: 
@@ -29,7 +29,7 @@ MonoBehaviour:
     speaker: Professeur
     text: "La premi\xE8re partie consiste \xE0 choisir le bon dosage pour les ingr\xE9dients
       qui sont les sucres ou edulcorants, les ar\xF4mes et les colorants. "
-    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: 0.065, y: 0.171, z: -0.235}
     cameraRotation: {x: 0, y: 0, z: 0}
     choices: []
   dialogBoxPrefab: {fileID: -4762232498145539390, guid: cab5af825cf7e2b7aa72d0051b9ef9a0, type: 3}

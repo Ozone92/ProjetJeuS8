@@ -16,8 +16,8 @@ MonoBehaviour:
   - id: Begin
     speaker: Vieux
     text: "Le petit peu \xE0 peine tenir les objets et voir le plan de travail."
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.013, y: 0.171, z: 0.064}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Cousin1
@@ -26,8 +26,8 @@ MonoBehaviour:
   - id: Cousin1
     speaker: Cousin
     text: Naaan je veux le faire, svp laissez moi faire !!
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Vieux2
@@ -37,8 +37,8 @@ MonoBehaviour:
     speaker: Vieux
     text: "Ca me connait le nettoyage et la st\xE9rilisation. Je cookais de la meth
       \xE0 l\u2019\xE9poque."
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.013, y: 0.171, z: 0.064}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Cousin2
@@ -47,8 +47,8 @@ MonoBehaviour:
   - id: Cousin2
     speaker: Cousin
     text: "C\u2019est quoi la meth ?"
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Vous1
@@ -58,8 +58,8 @@ MonoBehaviour:
     speaker: Vous
     text: "hum\u2026 oublie *il faut que j'emp\xEAche mon cousin de trop le fr\xE9quenter
       lui\u2026*"
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Choix
@@ -68,8 +68,8 @@ MonoBehaviour:
   - id: Choix
     speaker: Vous
     text: Qui s'en occupe ?
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: Cousin
       idToGo: Cousin_Vous1
@@ -96,8 +96,8 @@ MonoBehaviour:
   - id: Cousin_Vous1
     speaker: Vous
     text: Vazy le couz, fais attention par contre
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Cousin_Cousin1
@@ -106,8 +106,8 @@ MonoBehaviour:
   - id: Cousin_Cousin1
     speaker: Cousin
     text: "Youhou merci les gars ca va \xEAtre trop marrant"
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Cousin_Vieux1
@@ -117,8 +117,8 @@ MonoBehaviour:
     speaker: Vieux
     text: "J\u2019avais pas autant d'\xE9nergie quand j\u2019avais son \xE2ge, c\u2019est
       beau la jeunesse"
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.013, y: 0.171, z: 0.064}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Cousin_Vous2
@@ -127,8 +127,8 @@ MonoBehaviour:
   - id: Cousin_Vous2
     speaker: Vous
     text: Concentrons nous sur le tp svp
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.013, y: 0.171, z: 0.064}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: 
@@ -139,8 +139,8 @@ MonoBehaviour:
   - id: Vieux_Vous1
     speaker: Vous
     text: Ok heisenberg on te laisse cook
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Vieux_Vieux1
@@ -149,8 +149,8 @@ MonoBehaviour:
   - id: Vieux_Vieux1
     speaker: Vieux
     text: Jesse lets cook
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.013, y: 0.171, z: 0.064}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Vieux_Cousin1
@@ -159,8 +159,8 @@ MonoBehaviour:
   - id: Vieux_Cousin1
     speaker: Cousin
     text: c qui jesse ? je veux bien aider moi
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Vieux_Vous2
@@ -170,8 +170,8 @@ MonoBehaviour:
     speaker: Vous
     text: "\u2026 va aider je te regarde j\u2019ai besoin de m\u2019assoir c\u2019est
       trop"
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: 
@@ -182,8 +182,8 @@ MonoBehaviour:
   - id: Vous_Vous1
     speaker: Vous
     text: "Je m\u2019en occupe."
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Vous_Vieux1
@@ -192,8 +192,8 @@ MonoBehaviour:
   - id: Vous_Vieux1
     speaker: Vieux
     text: Ok pas de soucis.
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.013, y: 0.171, z: 0.064}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Vous_Cousin1
@@ -202,8 +202,8 @@ MonoBehaviour:
   - id: Vous_Cousin1
     speaker: Cousin
     text: "Ooh, pas dr\xF4le je voulais jouer ausi."
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Vous_Vous2
@@ -213,8 +213,8 @@ MonoBehaviour:
     speaker: Vous
     text: "On ne joue pas l\xE0 on travaille, je vais te laisser jouer sur mon pc
       ce soir \xE0 la maison tkt."
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Vous_Cousin2
@@ -223,8 +223,8 @@ MonoBehaviour:
   - id: Vous_Cousin2
     speaker: Cousin
     text: "Ok t\u2019as promis."
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: 

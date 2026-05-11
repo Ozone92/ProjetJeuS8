@@ -17,8 +17,8 @@ MonoBehaviour:
     speaker: Vieux
     text: "Je me souviens quand coca faisait encore leurs soda avec de la coca\xEFne,
       c\u2019\xE9tait m\xE9dicale haha"
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.013, y: 0.171, z: 0.064}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Cousin1
@@ -27,8 +27,8 @@ MonoBehaviour:
   - id: Cousin1
     speaker: Cousin
     text: "C\u2019est quoi la coca\xEFne ??"
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Vous1
@@ -37,8 +37,8 @@ MonoBehaviour:
   - id: Vous1
     speaker: Vous
     text: Oublie.
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Cousin2
@@ -48,8 +48,8 @@ MonoBehaviour:
     speaker: Cousin
     text: "Sinon j\u2019adore le sprite, je fais croire \xE0 maman que c\u2019est
       de l\u2019eau gazeuse."
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Vieux2
@@ -58,8 +58,8 @@ MonoBehaviour:
   - id: Vieux2
     speaker: Vieux
     text: "On peut partir sur un soda transparent, tr\xE8s sucr\xE9 et go\xFBt citron."
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.013, y: 0.171, z: 0.064}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: 

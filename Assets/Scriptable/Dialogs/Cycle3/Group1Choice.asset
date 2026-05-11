@@ -16,8 +16,8 @@ MonoBehaviour:
   - id: Begin
     speaker: Nerd
     text: Quelle solution a tu retenu ?
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.032, y: 0.1556, z: 0.5145}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: Secouer tres fort
       idToGo: Your
@@ -56,8 +56,8 @@ MonoBehaviour:
   - id: Your
     speaker: HB
     text: Donnez moi cette bouteille, je vais vous la secouer comme jamais !
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.128, y: 0.171, z: 0.384}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Your2
@@ -66,8 +66,8 @@ MonoBehaviour:
   - id: Your2
     speaker: Nerd
     text: Et une bouteille bien froide, tiens.
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.032, y: 0.1556, z: 0.5145}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: 
@@ -78,8 +78,8 @@ MonoBehaviour:
   - id: Other
     speaker: HB
     text: "\xC7a a l\u2019air long et beaucoup plus complexe ton truc\u2026"
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.128, y: 0.171, z: 0.384}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Other2
@@ -88,8 +88,8 @@ MonoBehaviour:
   - id: Other2
     speaker: Nerd
     text: "Peut-\xEAtre, mais bien plus efficace que simplement la secouer."
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.032, y: 0.1556, z: 0.5145}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: 

@@ -16,7 +16,7 @@ MonoBehaviour:
   - id: Begin
     speaker: Cousin
     text: "Ke kon mets dans l\u2019soda ?"
-    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
     cameraRotation: {x: 0, y: 0, z: 0}
     choices:
     - text: Utiliser du naturel
@@ -62,8 +62,8 @@ MonoBehaviour:
   - id: Other
     speaker: Vieux
     text: "Il faut faire confiance \xE0 ces anc\xEAtres tu sais"
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.013, y: 0.171, z: 0.064}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Other2
@@ -72,8 +72,8 @@ MonoBehaviour:
   - id: Other2
     speaker: Cousin
     text: "Moi je fais confiance a mon couz, je suis sur il sait ce qu\u2019il fait"
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Other3
@@ -83,8 +83,8 @@ MonoBehaviour:
     speaker: Vieux
     text: "C\u2019est bien de nous faire confiance, c\u2019est important la confiance
       de nos jours"
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.013, y: 0.171, z: 0.064}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Your2
@@ -93,8 +93,8 @@ MonoBehaviour:
   - id: Your2
     speaker: Cousin
     text: "On va tout d\xE9chirer !"
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: 

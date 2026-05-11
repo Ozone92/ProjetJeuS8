@@ -16,8 +16,8 @@ MonoBehaviour:
   - id: Begin
     speaker: HB
     text: "OK les gars laissez moi faire, j\u2019adore nettoyer des trucs."
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.128, y: 0.171, z: 0.384}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Vous1
@@ -26,8 +26,8 @@ MonoBehaviour:
   - id: Vous1
     speaker: Vous
     text: " Pourquoi tu fais genre t\u2019es un mec propre ?"
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.128, y: 0.171, z: 0.384}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: HB2
@@ -36,8 +36,8 @@ MonoBehaviour:
   - id: HB2
     speaker: HB
     text: Azy toi svp laisse moi faire.
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.128, y: 0.171, z: 0.384}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Nerd1
@@ -47,8 +47,8 @@ MonoBehaviour:
     speaker: Nerd
     text: "T\u2019es sur t\u2019as bien \xE9cout\xE9 et tu sauras suivre le protocol
       ? j\u2019ai pas envie de me salir je ne manipule pas moi."
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.032, y: 0.1556, z: 0.5145}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: HB3
@@ -57,8 +57,8 @@ MonoBehaviour:
   - id: HB3
     speaker: HB
     text: Mais tu connais bien le protocole pourtant.
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.128, y: 0.171, z: 0.384}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Nerd2
@@ -67,8 +67,8 @@ MonoBehaviour:
   - id: Nerd2
     speaker: Nerd
     text: Vous vous reposez trop sur moi ca saoule, tu peux le faire toi sinon.
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.032, y: 0.1556, z: 0.5145}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Choix
@@ -77,8 +77,8 @@ MonoBehaviour:
   - id: Choix
     speaker: Vous
     text: Qui s'en occupe ?
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.032, y: 0.1556, z: 0.5145}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: HB
       idToGo: HB_Vous1
@@ -105,8 +105,8 @@ MonoBehaviour:
   - id: HB_Vous1
     speaker: Vous
     text: "Vazy HB, on te laisse g\xE9rer."
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.032, y: 0.1556, z: 0.5145}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: HB_Nerd1
@@ -114,9 +114,9 @@ MonoBehaviour:
       minimalCondition: []
   - id: HB_Nerd1
     speaker: Nerd
-    text: "Vazy HB, on te laisse g\xE9rer."
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    text: "T\u2019as int\xE9r\xEAt \xE0 g\xE9rer."
+    cameraPosition: {x: -0.032, y: 0.1556, z: 0.5145}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: HB_HB1
@@ -125,8 +125,8 @@ MonoBehaviour:
   - id: HB_HB1
     speaker: HB
     text: '*flexes his muscles*'
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.128, y: 0.171, z: 0.384}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: 
@@ -138,7 +138,7 @@ MonoBehaviour:
     speaker: Vous
     text: "Nerd stp tu peux t\u2019en occuper quand m\xEAme, t\u2019es le plus s\xE9rieux
       d\u2019entre nous."
-    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.032, y: 0.1556, z: 0.5145}
     cameraRotation: {x: 0, y: 0, z: 0}
     choices:
     - text: 
@@ -148,8 +148,8 @@ MonoBehaviour:
   - id: Nerd_Nerd1
     speaker: Nerd
     text: "Faut vraiment tout faire ici. Vous avez de la chance c\u2019est not\xE9."
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.032, y: 0.1556, z: 0.5145}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Nerd_HB1
@@ -158,8 +158,8 @@ MonoBehaviour:
   - id: Nerd_HB1
     speaker: HB
     text: Azy tu me fais pas confiance ou quoi ?!
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.128, y: 0.171, z: 0.384}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Nerd_Vous2
@@ -168,8 +168,8 @@ MonoBehaviour:
   - id: Nerd_Vous2
     speaker: Vous
     text: Bah nan mdr
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.128, y: 0.171, z: 0.384}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Nerd_HB2
@@ -178,8 +178,8 @@ MonoBehaviour:
   - id: Nerd_HB2
     speaker: HB
     text: Pffff...
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.128, y: 0.171, z: 0.384}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: 
@@ -190,8 +190,8 @@ MonoBehaviour:
   - id: Vous_Vous1
     speaker: Vous
     text: Je vais le faire, j'vais faire de mon mieux
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.032, y: 0.1556, z: 0.5145}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Vous_Nerd1
@@ -200,8 +200,8 @@ MonoBehaviour:
   - id: Vous_Nerd1
     speaker: Nerd
     text: "T\u2019as int\xE9r\xEAt \xE0 g\xE9rer"
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.032, y: 0.1556, z: 0.5145}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Vous_HB1
@@ -211,8 +211,8 @@ MonoBehaviour:
     speaker: HB
     text: "Oue vraiment, surtout vu comment tu forces j'tavais dit j\u2019\xE9tais
       chaud de le faire."
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.128, y: 0.171, z: 0.384}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: 

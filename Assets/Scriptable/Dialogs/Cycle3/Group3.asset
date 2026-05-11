@@ -17,8 +17,8 @@ MonoBehaviour:
     speaker: Cousin
     text: "J\u2019ai vu sur tiktok qu\u2019on pouvait mettre de l\u2019azote liquide
       avec quelques billes de gaz et que ca fait une boisson explosive !"
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Vieux1
@@ -27,8 +27,8 @@ MonoBehaviour:
   - id: Vieux1
     speaker: Vieux
     text: "J\u2019aime bien l'id\xE9e, laissons sa chance \xE0 la jeunesse"
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.013, y: 0.171, z: 0.064}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: 

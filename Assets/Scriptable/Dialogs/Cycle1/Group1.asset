@@ -17,8 +17,8 @@ MonoBehaviour:
     speaker: HB
     text: On peut faire comme les sodas existant. De ce que je vois sur ma canette,
       il y a beaucoup de tout
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.128, y: 0.171, z: 0.283}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: nerdSain
@@ -28,8 +28,8 @@ MonoBehaviour:
     speaker: Nerd
     text: Si on veut quelque chose de plus sain, il faudrait mettre des sucres et
       colorants naturels.
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.032, y: 0.171, z: 0.384}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: hbOlive
@@ -38,8 +38,8 @@ MonoBehaviour:
   - id: hbOlive
     speaker: HB
     text: "OK.J\u2019ai vu des colorants naturels vert olive."
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.128, y: 0.171, z: 0.283}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: playerOlive
@@ -48,8 +48,8 @@ MonoBehaviour:
   - id: playerOlive
     speaker: Vous
     text: vert olive mdrr
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.128, y: 0.171, z: 0.384}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: nerdNaturel
@@ -62,8 +62,8 @@ MonoBehaviour:
     text: "Un peu de s\xE9rieux, go partir sur une ar\xF4me menthe avec des colorants
       naturels menthe aussi. Pour les sucres, le sirop de ma\xEFs doit \xEAtre la
       meilleure option."
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.032, y: 0.1556, z: 0.5145}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices: []
   dialogBoxPrefab: {fileID: -4762232498145539390, guid: cab5af825cf7e2b7aa72d0051b9ef9a0, type: 3}
   playerStats: {fileID: 11400000, guid: 9f2f0ae3b15e67cdd9a60f8a24eafe79, type: 2}

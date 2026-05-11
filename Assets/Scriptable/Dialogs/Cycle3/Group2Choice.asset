@@ -17,8 +17,8 @@ MonoBehaviour:
     speaker: Bum
     text: "Bon, on fait quoi ? J\u2019ai vraiment confiance en ma m\xE9thode, mais
       si tu veux faire autre chose je te suis."
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: Secouer tres fort
       idToGo: Other
@@ -57,8 +57,8 @@ MonoBehaviour:
   - id: Your
     speaker: Rival
     text: "Tu penses vraiment qu\u2019on peut lui faire confiance ?"
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Your2
@@ -68,8 +68,8 @@ MonoBehaviour:
     speaker: Vous
     text: "J\u2019ai un bon feeling sur son id\xE9e. Je pense vraiment que c\u2019est
       la meilleure"
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Your3
@@ -79,8 +79,8 @@ MonoBehaviour:
     speaker: HB
     text: "Faites moi confiance pour une fois, vraiment j\u2019ai eu un \xE9clair
       de g\xE9nie"
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: 
@@ -91,8 +91,8 @@ MonoBehaviour:
   - id: Other
     speaker: Rival
     text: "Ca m\u2019a l\u2019air mieux que ce que propose l\u2019autre"
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Other2
@@ -101,8 +101,8 @@ MonoBehaviour:
   - id: Other2
     speaker: Bum
     text: "Pourtant je la sentais bien cette id\xE9e"
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Other3
@@ -111,8 +111,8 @@ MonoBehaviour:
   - id: Other3
     speaker: Vous
     text: "Je pense vraiment que la solution de l\u2019autre groupe est mieux"
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: 

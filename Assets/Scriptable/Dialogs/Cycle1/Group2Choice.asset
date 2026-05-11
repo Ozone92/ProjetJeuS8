@@ -16,8 +16,8 @@ MonoBehaviour:
   - id: Begin
     speaker: Bum
     text: Vous voulez faire quoi du coup ?
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: Utiliser du naturel
       idToGo: Other
@@ -62,8 +62,8 @@ MonoBehaviour:
   - id: Other
     speaker: Rival
     text: "Tu penses vraiment que c\u2019est mieux ?"
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Other2
@@ -72,8 +72,8 @@ MonoBehaviour:
   - id: Other2
     speaker: Vous
     text: "Je te promets que c\u2019est le cas ! Cette fois-ci je ne me trompe pas"
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Other3
@@ -82,8 +82,8 @@ MonoBehaviour:
   - id: Other3
     speaker: Rival
     text: "Je te fais confiance, a la moindre erreur par contre\u2026"
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Other4
@@ -92,8 +92,8 @@ MonoBehaviour:
   - id: Other4
     speaker: Bum
     text: "Vous avez l\u2019air de vous y connaitre, je vous laisse faire"
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: 
@@ -104,8 +104,8 @@ MonoBehaviour:
   - id: Your
     speaker: Rival
     text: Tu vois, je propose toujours les meilleures solutions
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Your2
@@ -114,8 +114,8 @@ MonoBehaviour:
   - id: Your2
     speaker: Bum
     text: "Simple, efficace et sans probl\xE8me de droit d\u2019auteur."
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: 

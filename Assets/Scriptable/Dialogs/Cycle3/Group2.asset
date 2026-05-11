@@ -17,8 +17,8 @@ MonoBehaviour:
     speaker: Rival
     text: "J\u2019ai check le sujet, \xE7a parle de la Loi de Henry mais je n\u2019arrive
       pas \xE0 bien la comprendre"
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Bum1
@@ -29,8 +29,8 @@ MonoBehaviour:
     text: "Baaah c\u2019est simple. Faut bien refroidir la bouteille, puis mettre
       le gaz dissous dedans et enfin sceller la bouteille. M\u2019enfin je crois
       que c\u2019est ca, si j\u2019ai bien lu"
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Rival1
@@ -39,8 +39,8 @@ MonoBehaviour:
   - id: Rival1
     speaker: Rival
     text: "Ca m'\xE9tonnerait, tu comprends jamais les consignes"
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: 

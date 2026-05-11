@@ -16,8 +16,8 @@ MonoBehaviour:
   - id: Begin
     speaker: HB
     text: "Si on secoue tr\xE8s tr\xE8s fort, ca devrait le faire non ?"
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.128, y: 0.171, z: 0.384}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Nerd1
@@ -27,8 +27,8 @@ MonoBehaviour:
     speaker: Nerd
     text: Il faut surtout que la bouteille soit bien froide, sinon le gaz ne se fera
       pas correctement.
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: -0.032, y: 0.1556, z: 0.5145}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: 

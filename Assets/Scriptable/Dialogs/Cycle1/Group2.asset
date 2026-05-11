@@ -17,8 +17,8 @@ MonoBehaviour:
     speaker: Bum
     text: "On pourra verser la moiti\xE9 de mon coca dans notre soda, ce sera solide.
       L\u2019autre moiti\xE9 de l\u2019eau gazeuse, \xE7a suffira."
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Rival1
@@ -28,8 +28,8 @@ MonoBehaviour:
     speaker: Rival
     text: "C\u2019est quoi cette id\xE9e de salopard. Si tu veux on copie juste les
       ingr\xE9dients du coca mais on va pas utiliser ta canette ti\xE8de."
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Bum2
@@ -38,8 +38,8 @@ MonoBehaviour:
   - id: Bum2
     speaker: Bum
     text: "Je viens de l\u2019acheter au Lidl, elle est encore fra\xEEche TwT"
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Vous1
@@ -48,8 +48,8 @@ MonoBehaviour:
   - id: Vous1
     speaker: Vous
     text: Il a raison c important de boire frais
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Rival2
@@ -61,8 +61,8 @@ MonoBehaviour:
     speaker: Rival
     text: "Vous me cassez les couilles, on va juste copier les ingr\xE9dients du
       coca c bon."
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
       idToGo: Rival2

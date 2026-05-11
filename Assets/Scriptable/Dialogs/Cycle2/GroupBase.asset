@@ -16,8 +16,8 @@ MonoBehaviour:
   - id: Begin
     speaker: Vous
     text: Ils semblent etre en train de preparer le materiel pour nettoyer.
-    cameraPosition: {x: 0, y: 0, z: 0}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraPosition: {x: 0.0761, y: 0.3138, z: 0.5427}
+    cameraRotation: {x: 45, y: 160, z: 0}
     choices: []
   dialogBoxPrefab: {fileID: -4762232498145539390, guid: cab5af825cf7e2b7aa72d0051b9ef9a0, type: 3}
   playerStats: {fileID: 11400000, guid: 9f2f0ae3b15e67cdd9a60f8a24eafe79, type: 2}
