@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using System.Collections; 
 
 public class MiniJeuManager : MonoBehaviour
 {
@@ -8,14 +9,20 @@ public class MiniJeuManager : MonoBehaviour
     [Header("Interface UI")]
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI timerText;
-    
+    public GameObject ecranDemarrage; 
+
     [Header("Paramètres du Jeu")]
     public GameObject prefabTache; 
     public RectTransform zoneDeSpawn; 
-    public int nombreDeTachesSimultanees = 4; // On veut toujours 4 taches
+    public int nombreDeTachesSimultanees = 4;
+    
+    [Header("Audio")]
+    public AudioSource sourceSFX; // Le haut-parleur pour les bruitages
+    public AudioClip sonNettoyage; // Le fichier son à jouer
     
     private int score = 0;
     private float tempsRestant = 15f; 
+    private bool jeuEnCours = false; 
     private bool jeuTermine = false;
 
     private void Awake()
@@ -26,8 +33,38 @@ public class MiniJeuManager : MonoBehaviour
     private void Start()
     {
         scoreText.text = "Score : 0";
+        timerText.text = "Prêt ?";
+        ecranDemarrage.SetActive(true); 
+    }
+
+    public void DemarrerJeu()
+    {
+        StartCoroutine(SequenceDeDemarrage());
+    }
+
+    IEnumerator SequenceDeDemarrage()
+    {
+        ecranDemarrage.SetActive(false); 
+
+        timerText.text = "3";
+        yield return new WaitForSeconds(1f); 
+
+        timerText.text = "2";
+        yield return new WaitForSeconds(1f);
+
+        timerText.text = "1";
+        yield return new WaitForSeconds(1f);
+
+        timerText.text = "GO !";
+        yield return new WaitForSeconds(0.5f); 
         
-        // AU LANCEMENT : On fait apparaître les 4 premières taches
+        LancerPartie();
+    }
+
+    private void LancerPartie()
+    {
+        jeuEnCours = true;
+        
         for (int i = 0; i < nombreDeTachesSimultanees; i++)
         {
             FaireApparaitreTache();
@@ -36,9 +73,8 @@ public class MiniJeuManager : MonoBehaviour
 
     private void Update()
     {
-        if (jeuTermine) return;
+        if (!jeuEnCours || jeuTermine) return;
 
-        // Gestion du chronomètre uniquement
         tempsRestant -= Time.deltaTime;
         timerText.text = "Temps : " + Mathf.CeilToInt(tempsRestant).ToString() + "s";
 
@@ -50,7 +86,6 @@ public class MiniJeuManager : MonoBehaviour
 
     public void FaireApparaitreTache()
     {
-        // Si le jeu est fini, on ne fait plus apparaître de nouvelles taches
         if (jeuTermine) return;
 
         GameObject nouvelleTache = Instantiate(prefabTache, zoneDeSpawn);
@@ -64,13 +99,17 @@ public class MiniJeuManager : MonoBehaviour
 
     public void AjouterScore(int points)
     {
-        if (jeuTermine) return;
+        if (!jeuEnCours || jeuTermine) return;
         
         score += points;
         scoreText.text = "Score : " + score.ToString();
+        
+        // Joue le bruitage de nettoyage à chaque point marqué
+        if (sourceSFX != null && sonNettoyage != null)
+        {
+            sourceSFX.PlayOneShot(sonNettoyage);
+        }
 
-        // REMPLACEMENT IMMEDIAT : 
-        // Puisqu'on vient d'en cliquer une, on en crée une nouvelle
         FaireApparaitreTache();
     }
 
@@ -80,11 +119,8 @@ public class MiniJeuManager : MonoBehaviour
         tempsRestant = 0;
         timerText.text = "Terminé !";
         
-        // Optionnel : Détruire toutes les taches restantes à l'écran à la fin
         foreach (Transform child in zoneDeSpawn) {
             Destroy(child.gameObject);
         }
-
-        Debug.Log("Score final : " + score);
     }
 }
