@@ -16,62 +16,83 @@ MonoBehaviour:
   - id: 1
     speaker: Maman
     text: Reveille toi mon cheri tu vas etre en retard
-    cameraPosition: {x: 0, y: 0, z: 0}
+    useDefaultCameraTransform: 1
+    cameraPosition: {x: 0, y: 1, z: -10}
     cameraRotation: {x: 0, y: 0, z: 0}
-    statsToChange: 
-    amount: 0
-    choices: []
+    choices:
+    - text: 
+      idToGo: 2
+      statsToChange: []
+      minimalCondition: []
   - id: 2
     speaker: Vous
     text: Argh... je deteste le lundi
-    cameraPosition: {x: 0, y: 0, z: 0}
+    useDefaultCameraTransform: 1
+    cameraPosition: {x: 0, y: 1, z: -10}
     cameraRotation: {x: 0, y: 0, z: 0}
-    statsToChange: 
-    amount: 0
-    choices: []
+    choices:
+    - text: 
+      idToGo: 3
+      statsToChange: []
+      minimalCondition: []
   - id: 3
     speaker: Vous
     text: Il est deja 8h50 ? Je vais etre en retard !
-    cameraPosition: {x: 0, y: 0, z: 0}
+    useDefaultCameraTransform: 1
+    cameraPosition: {x: 0, y: 1, z: -10}
     cameraRotation: {x: 0, y: 0, z: 0}
-    statsToChange: 
-    amount: 0
-    choices: []
+    choices:
+    - text: 
+      idToGo: 4
+      statsToChange:
+      - name: Reveil
+        amount: 1
+      minimalCondition: []
   - id: 4
     speaker: Maman
-    text: Oublie pas que tu as un TP de chimie aujourd'hui !
-    cameraPosition: {x: 0, y: 0, z: 0}
+    text: N'oublie pas que tu as un TP de chimie aujourd'hui !
+    useDefaultCameraTransform: 1
+    cameraPosition: {x: 0, y: 1, z: -10}
     cameraRotation: {x: 0, y: 0, z: 0}
-    statsToChange: 
-    amount: 0
-    choices: []
+    choices:
+    - text: 
+      idToGo: 5
+      statsToChange: []
+      minimalCondition: []
   - id: 5
     speaker: Vous
-    text: Mince j'avais oublie en plus ce salopard de Renji sera
-    cameraPosition: {x: 0, y: 0, z: 0}
+    text: Mince j'avais oublie en plus ce salopard de Renji sera la
+    useDefaultCameraTransform: 1
+    cameraPosition: {x: 0, y: 1, z: -10}
     cameraRotation: {x: 0, y: 0, z: 0}
-    statsToChange: 
-    amount: 0
-    choices: []
+    choices:
+    - text: 
+      idToGo: 6
+      statsToChange: []
+      minimalCondition: []
   - id: 6
     speaker: Vous
     text: Qu'est ce que je vais faire ?
-    cameraPosition: {x: 0, y: 0, z: 0}
+    useDefaultCameraTransform: 1
+    cameraPosition: {x: 0, y: 1, z: -10}
     cameraRotation: {x: 0, y: 0, z: 0}
-    statsToChange: 
-    amount: 0
     choices:
     - text: Aller au TP
       idToGo: Choix1
+      statsToChange: []
+      minimalCondition: []
     - text: Se rendormir
       idToGo: Choix2
+      statsToChange: []
+      minimalCondition: []
   - id: Choix1
     speaker: Vous
     text: Bon j'imagine que j'ai pas le choix...
-    cameraPosition: {x: 0, y: 0, z: 0}
+    useDefaultCameraTransform: 1
+    cameraPosition: {x: 0, y: 1, z: -10}
     cameraRotation: {x: 0, y: 0, z: 0}
-    statsToChange: 
-    amount: 0
     choices: []
   dialogBoxPrefab: {fileID: -4762232498145539390, guid: cab5af825cf7e2b7aa72d0051b9ef9a0, type: 3}
   playerStats: {fileID: 11400000, guid: 9f2f0ae3b15e67cdd9a60f8a24eafe79, type: 2}
+  defaultCameraPosition: {x: 0.781, y: 0.369, z: -1.683}
+  defaultCameraRotation: {x: 19.442, y: -110.537, z: -2.048}

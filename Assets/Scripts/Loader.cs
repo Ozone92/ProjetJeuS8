@@ -9,8 +9,8 @@ public static class Loader
     public enum SceneNames
     {
         WelcomeMenu,
-        RoomScene,
-        Salle_de_classe,
+        RoomScene
+        ,
         
         
     }

@@ -12,33 +12,15 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField] private Button PlayButton;
     [SerializeField] private Button QuitButton;
-    [SerializeField] private Button SettingsButton;
-    [SerializeField] private Button GoBackButton;
     
-    public GameObject settings;
-    public GameObject MainMenu;
-    public GameObject BackGroundImage;
-    public GameObject BackGroundImageSettings;
     
-    public AudioSource _audioSource;
-    /*
-    private void LoadGame()
-    {
-        Loader.Load(Loader.SceneNames.ChooseGamemode);
-    }
-    */
-    IEnumerable<WaitUntil> IsSoundplaying()
-    {
-        _audioSource.Play();
-        yield return new WaitUntil(() => _audioSource.isPlaying);
-    }
     
 
     private void Awake()
     {
         PlayButton.onClick.AddListener(() =>
         {
-            SceneManager.LoadScene(Loader.SceneNames.SceneFinale.ToString());
+            SceneManager.LoadScene(Loader.SceneNames.RoomScene.ToString());
         });
         
         QuitButton.onClick.AddListener(() =>
@@ -47,11 +29,5 @@ public class MainMenu : MonoBehaviour
         });
     }
     
-    public void LoadSettingsMenu()
-    {
-        MainMenu.SetActive(false);
-        BackGroundImage.SetActive(false);
-        BackGroundImageSettings.SetActive(true);
-        settings.SetActive(true);
-    }
+    
 }
