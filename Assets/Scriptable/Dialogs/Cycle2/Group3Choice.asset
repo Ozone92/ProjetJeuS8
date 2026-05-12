@@ -1,0 +1,236 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47e8c251aa9a4d95ca6b84096cf8588c, type: 3}
+  m_Name: Group3Choice
+  m_EditorClassIdentifier: Assembly-CSharp::DialogData
+  dialogs:
+  - id: Begin
+    speaker: Vieux
+    text: "Le petit peu \xE0 peine tenir les objets et voir le plan de travail."
+    cameraPosition: {x: -0.013, y: 0.171, z: 0.064}
+    cameraRotation: {x: 0, y: 180, z: 0}
+    choices:
+    - text: 
+      idToGo: Cousin1
+      statsToChange: []
+      minimalCondition: []
+  - id: Cousin1
+    speaker: Cousin
+    text: Naaan je veux le faire, svp laissez moi faire !!
+    cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
+    cameraRotation: {x: 0, y: 180, z: 0}
+    choices:
+    - text: 
+      idToGo: Vieux2
+      statsToChange: []
+      minimalCondition: []
+  - id: Vieux2
+    speaker: Vieux
+    text: "Ca me connait le nettoyage et la st\xE9rilisation. Je cookais de la meth
+      \xE0 l\u2019\xE9poque."
+    cameraPosition: {x: -0.013, y: 0.171, z: 0.064}
+    cameraRotation: {x: 0, y: 180, z: 0}
+    choices:
+    - text: 
+      idToGo: Cousin2
+      statsToChange: []
+      minimalCondition: []
+  - id: Cousin2
+    speaker: Cousin
+    text: "C\u2019est quoi la meth ?"
+    cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
+    cameraRotation: {x: 0, y: 180, z: 0}
+    choices:
+    - text: 
+      idToGo: Vous1
+      statsToChange: []
+      minimalCondition: []
+  - id: Vous1
+    speaker: Vous
+    text: "hum\u2026 oublie *il faut que j'emp\xEAche mon cousin de trop le fr\xE9quenter
+      lui\u2026*"
+    cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
+    cameraRotation: {x: 0, y: 180, z: 0}
+    choices:
+    - text: 
+      idToGo: Choix
+      statsToChange: []
+      minimalCondition: []
+  - id: Choix
+    speaker: Vous
+    text: Qui s'en occupe ?
+    cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
+    cameraRotation: {x: 0, y: 180, z: 0}
+    choices:
+    - text: Cousin
+      idToGo: Cousin_Vous1
+      statsToChange:
+      - name: GroupScore
+        amount: 1
+      - name: TpScore
+        amount: 0
+      minimalCondition: []
+    - text: Vieux
+      idToGo: Vieux_Vous1
+      statsToChange:
+      - name: GroupScore
+        amount: 0
+      - name: TpScore
+        amount: 1
+      minimalCondition: []
+    - text: Vous
+      idToGo: Vous_Vous1
+      statsToChange:
+      - name: DoMinigame2
+        amount: 1
+      minimalCondition: []
+  - id: Cousin_Vous1
+    speaker: Vous
+    text: Vazy le couz, fais attention par contre
+    cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
+    cameraRotation: {x: 0, y: 180, z: 0}
+    choices:
+    - text: 
+      idToGo: Cousin_Cousin1
+      statsToChange: []
+      minimalCondition: []
+  - id: Cousin_Cousin1
+    speaker: Cousin
+    text: "Youhou merci les gars ca va \xEAtre trop marrant"
+    cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
+    cameraRotation: {x: 0, y: 180, z: 0}
+    choices:
+    - text: 
+      idToGo: Cousin_Vieux1
+      statsToChange: []
+      minimalCondition: []
+  - id: Cousin_Vieux1
+    speaker: Vieux
+    text: "J\u2019avais pas autant d'\xE9nergie quand j\u2019avais son \xE2ge, c\u2019est
+      beau la jeunesse"
+    cameraPosition: {x: -0.013, y: 0.171, z: 0.064}
+    cameraRotation: {x: 0, y: 180, z: 0}
+    choices:
+    - text: 
+      idToGo: Cousin_Vous2
+      statsToChange: []
+      minimalCondition: []
+  - id: Cousin_Vous2
+    speaker: Vous
+    text: Concentrons nous sur le tp svp
+    cameraPosition: {x: -0.013, y: 0.171, z: 0.064}
+    cameraRotation: {x: 0, y: 180, z: 0}
+    choices:
+    - text: 
+      idToGo: 
+      statsToChange:
+      - name: CycleFinish2
+        amount: 1
+      minimalCondition: []
+  - id: Vieux_Vous1
+    speaker: Vous
+    text: Ok heisenberg on te laisse cook
+    cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
+    cameraRotation: {x: 0, y: 180, z: 0}
+    choices:
+    - text: 
+      idToGo: Vieux_Vieux1
+      statsToChange: []
+      minimalCondition: []
+  - id: Vieux_Vieux1
+    speaker: Vieux
+    text: Jesse lets cook
+    cameraPosition: {x: -0.013, y: 0.171, z: 0.064}
+    cameraRotation: {x: 0, y: 180, z: 0}
+    choices:
+    - text: 
+      idToGo: Vieux_Cousin1
+      statsToChange: []
+      minimalCondition: []
+  - id: Vieux_Cousin1
+    speaker: Cousin
+    text: c qui jesse ? je veux bien aider moi
+    cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
+    cameraRotation: {x: 0, y: 180, z: 0}
+    choices:
+    - text: 
+      idToGo: Vieux_Vous2
+      statsToChange: []
+      minimalCondition: []
+  - id: Vieux_Vous2
+    speaker: Vous
+    text: "\u2026 va aider je te regarde j\u2019ai besoin de m\u2019assoir c\u2019est
+      trop"
+    cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
+    cameraRotation: {x: 0, y: 180, z: 0}
+    choices:
+    - text: 
+      idToGo: 
+      statsToChange:
+      - name: CycleFinish2
+        amount: 1
+      minimalCondition: []
+  - id: Vous_Vous1
+    speaker: Vous
+    text: "Je m\u2019en occupe."
+    cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
+    cameraRotation: {x: 0, y: 180, z: 0}
+    choices:
+    - text: 
+      idToGo: Vous_Vieux1
+      statsToChange: []
+      minimalCondition: []
+  - id: Vous_Vieux1
+    speaker: Vieux
+    text: Ok pas de soucis.
+    cameraPosition: {x: -0.013, y: 0.171, z: 0.064}
+    cameraRotation: {x: 0, y: 180, z: 0}
+    choices:
+    - text: 
+      idToGo: Vous_Cousin1
+      statsToChange: []
+      minimalCondition: []
+  - id: Vous_Cousin1
+    speaker: Cousin
+    text: "Ooh, pas dr\xF4le je voulais jouer ausi."
+    cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
+    cameraRotation: {x: 0, y: 180, z: 0}
+    choices:
+    - text: 
+      idToGo: Vous_Vous2
+      statsToChange: []
+      minimalCondition: []
+  - id: Vous_Vous2
+    speaker: Vous
+    text: "On ne joue pas l\xE0 on travaille, je vais te laisser jouer sur mon pc
+      ce soir \xE0 la maison tkt."
+    cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
+    cameraRotation: {x: 0, y: 180, z: 0}
+    choices:
+    - text: 
+      idToGo: Vous_Cousin2
+      statsToChange: []
+      minimalCondition: []
+  - id: Vous_Cousin2
+    speaker: Cousin
+    text: "Ok t\u2019as promis."
+    cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
+    cameraRotation: {x: 0, y: 180, z: 0}
+    choices:
+    - text: 
+      idToGo: 
+      statsToChange:
+      - name: CycleFinish2
+        amount: 1
+      minimalCondition: []
+  dialogBoxPrefab: {fileID: -4762232498145539390, guid: cab5af825cf7e2b7aa72d0051b9ef9a0, type: 3}
+  playerStats: {fileID: 11400000, guid: 9f2f0ae3b15e67cdd9a60f8a24eafe79, type: 2}

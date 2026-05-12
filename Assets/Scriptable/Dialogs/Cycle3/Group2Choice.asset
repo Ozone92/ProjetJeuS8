@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47e8c251aa9a4d95ca6b84096cf8588c, type: 3}
+  m_Name: Group2Choice
+  m_EditorClassIdentifier: Assembly-CSharp::DialogData
+  dialogs:
+  - id: Begin
+    speaker: Bum
+    text: "Bon, on fait quoi ? J\u2019ai vraiment confiance en ma m\xE9thode, mais
+      si tu veux faire autre chose je te suis."
+    cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
+    cameraRotation: {x: 0, y: 180, z: 0}
+    choices:
+    - text: Secouer tres fort
+      idToGo: Other
+      statsToChange:
+      - name: GroupScore
+        amount: -1
+      - name: TpScore
+        amount: 0
+      minimalCondition:
+      - name: C3G1
+        amount: 1
+    - text: Utiliser la Loi de Henry
+      idToGo: Your
+      statsToChange:
+      - name: GroupScore
+        amount: 1
+      - name: TpScore
+        amount: 1
+      minimalCondition:
+      - name: C3G2
+        amount: 1
+    - text: Mettre de l'azote liquide et du gaz
+      idToGo: Other
+      statsToChange:
+      - name: GroupScore
+        amount: -1
+      - name: TpScore
+        amount: -1
+      minimalCondition:
+      - name: C3G3
+        amount: 1
+    - text: Continuer a discuter avec les autres
+      idToGo: 
+      statsToChange: []
+      minimalCondition: []
+  - id: Your
+    speaker: Rival
+    text: "Tu penses vraiment qu\u2019on peut lui faire confiance ?"
+    cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
+    cameraRotation: {x: 0, y: 180, z: 0}
+    choices:
+    - text: 
+      idToGo: Your2
+      statsToChange: []
+      minimalCondition: []
+  - id: Your2
+    speaker: Vous
+    text: "J\u2019ai un bon feeling sur son id\xE9e. Je pense vraiment que c\u2019est
+      la meilleure"
+    cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
+    cameraRotation: {x: 0, y: 180, z: 0}
+    choices:
+    - text: 
+      idToGo: Your3
+      statsToChange: []
+      minimalCondition: []
+  - id: Your3
+    speaker: HB
+    text: "Faites moi confiance pour une fois, vraiment j\u2019ai eu un \xE9clair
+      de g\xE9nie"
+    cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
+    cameraRotation: {x: 0, y: 180, z: 0}
+    choices:
+    - text: 
+      idToGo: 
+      statsToChange:
+      - name: CycleFinish3
+        amount: 1
+      minimalCondition: []
+  - id: Other
+    speaker: Rival
+    text: "Ca m\u2019a l\u2019air mieux que ce que propose l\u2019autre"
+    cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
+    cameraRotation: {x: 0, y: 180, z: 0}
+    choices:
+    - text: 
+      idToGo: Other2
+      statsToChange: []
+      minimalCondition: []
+  - id: Other2
+    speaker: Bum
+    text: "Pourtant je la sentais bien cette id\xE9e"
+    cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
+    cameraRotation: {x: 0, y: 180, z: 0}
+    choices:
+    - text: 
+      idToGo: Other3
+      statsToChange: []
+      minimalCondition: []
+  - id: Other3
+    speaker: Vous
+    text: "Je pense vraiment que la solution de l\u2019autre groupe est mieux"
+    cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
+    cameraRotation: {x: 0, y: 180, z: 0}
+    choices:
+    - text: 
+      idToGo: 
+      statsToChange:
+      - name: CycleFinish3
+        amount: 1
+      minimalCondition: []
+  dialogBoxPrefab: {fileID: -4762232498145539390, guid: cab5af825cf7e2b7aa72d0051b9ef9a0, type: 3}
+  playerStats: {fileID: 11400000, guid: 9f2f0ae3b15e67cdd9a60f8a24eafe79, type: 2}
