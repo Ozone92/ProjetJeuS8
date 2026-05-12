@@ -21,7 +21,7 @@ public class MiniJeuManager : MonoBehaviour
     public AudioClip sonNettoyage; // Le fichier son à jouer
     
     private int score = 0;
-    private float tempsRestant = 15f; 
+    private float tempsRestant = 60f; 
     private bool jeuEnCours = false; 
     private bool jeuTermine = false;
 
