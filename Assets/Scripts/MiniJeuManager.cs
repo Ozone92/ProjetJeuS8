@@ -20,7 +20,9 @@ public class MiniJeuManager : MonoBehaviour
     public AudioSource sourceSFX; // Le haut-parleur pour les bruitages
     public AudioClip sonNettoyage; // Le fichier son à jouer
     
-    private int score = 0;
+    public int Score { get; private set; }
+    public bool JeuTermine { get; private set; }
+    
     private float tempsRestant = 60f; 
     private bool jeuEnCours = false; 
     private bool jeuTermine = false;
@@ -86,7 +88,7 @@ public class MiniJeuManager : MonoBehaviour
 
     public void FaireApparaitreTache()
     {
-        if (jeuTermine) return;
+        if (JeuTermine) return;
 
         GameObject nouvelleTache = Instantiate(prefabTache, zoneDeSpawn);
         RectTransform rectTache = nouvelleTache.GetComponent<RectTransform>();
@@ -101,8 +103,8 @@ public class MiniJeuManager : MonoBehaviour
     {
         if (!jeuEnCours || jeuTermine) return;
         
-        score += points;
-        scoreText.text = "Score : " + score.ToString();
+        Score += points;
+        scoreText.text = "Score : " + Score.ToString();
         
         // Joue le bruitage de nettoyage à chaque point marqué
         if (sourceSFX != null && sonNettoyage != null)
@@ -115,12 +117,14 @@ public class MiniJeuManager : MonoBehaviour
 
     private void FinDuJeu()
     {
-        jeuTermine = true;
+        JeuTermine = true;
         tempsRestant = 0;
         timerText.text = "Terminé !";
         
         foreach (Transform child in zoneDeSpawn) {
             Destroy(child.gameObject);
         }
+
+        Debug.Log("Score final : " + Score);
     }
 }

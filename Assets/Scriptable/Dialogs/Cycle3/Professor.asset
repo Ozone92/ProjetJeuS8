@@ -10,16 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 47e8c251aa9a4d95ca6b84096cf8588c, type: 3}
-  m_Name: Happy Dialog
+  m_Name: Professor
   m_EditorClassIdentifier: Assembly-CSharp::DialogData
   dialogs:
   - id: Begin
     speaker: Professeur
-    text: Ca me rejouit de voir que le sujet te plait
-    cameraPosition: {x: 0, y: 3, z: 3}
-    cameraRotation: {x: 10, y: 0, z: 0}
-    statsToChange: 
-    amount: 0
+    text: Troisieme et derniere partie du TP, vous devez maintenant mettre le gaz
+      dans votre boisson et bien la sceller
+    cameraPosition: {x: 0.065, y: 0.171, z: -0.235}
+    cameraRotation: {x: 0, y: 0, z: 0}
     choices: []
   dialogBoxPrefab: {fileID: -4762232498145539390, guid: cab5af825cf7e2b7aa72d0051b9ef9a0, type: 3}
   playerStats: {fileID: 11400000, guid: 9f2f0ae3b15e67cdd9a60f8a24eafe79, type: 2}
