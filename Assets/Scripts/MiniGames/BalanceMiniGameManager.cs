@@ -35,6 +35,7 @@ public class BalanceMiniGameManager : MonoBehaviour
     private int score;
     private bool gameRunning;
     private bool gameEnded;
+    private bool wasStable = true;
 
     private void Awake()
     {
@@ -72,17 +73,25 @@ public class BalanceMiniGameManager : MonoBehaviour
         {
             unstablePenaltyTimer = 0f;
             stableTime += Time.deltaTime;
-            UpdateTexts("Stable");
+            wasStable = true;
+            UpdateTexts();
         }
         else
         {
+            if (wasStable)
+            {
+                ApplyScorePenaltyOnce();
+                unstablePenaltyTimer = 0f;
+            }
+
             if (loseStableTimeWhenUnstable)
             {
                 stableTime = Mathf.Max(0f, stableTime - Time.deltaTime * unstablePenaltySpeed);
             }
 
+            wasStable = false;
             ApplyUnstableScorePenalty();
-            UpdateTexts("Instable");
+            UpdateTexts();
         }
 
         if (stableTime >= requiredStableTime || remainingTime <= 0f)
@@ -136,6 +145,7 @@ public class BalanceMiniGameManager : MonoBehaviour
         stableTime = 0f;
         unstablePenaltyTimer = 0f;
         score = startScore;
+        wasStable = true;
         gameRunning = true;
         gameEnded = false;
 
@@ -173,16 +183,18 @@ public class BalanceMiniGameManager : MonoBehaviour
         }
     }
 
-    private void UpdateTexts(string status)
+    private void UpdateTexts(string status = "")
     {
+        string timerValue = "Temps : " + Mathf.CeilToInt(Mathf.Max(0f, remainingTime)) + "s";
+
         if (timerText)
         {
-            timerText.text = "Temps : " + Mathf.CeilToInt(Mathf.Max(0f, remainingTime)) + "s";
+            timerText.text = timerValue;
         }
 
         if (statusText)
         {
-            statusText.text = status;
+            statusText.text = string.IsNullOrEmpty(status) ? timerValue : status;
         }
 
         if (stableTimeText)
@@ -376,7 +388,7 @@ public class BalanceMiniGameManager : MonoBehaviour
         labelRect.offsetMax = Vector2.zero;
 
         TextMeshProUGUI label = labelObject.GetComponent<TextMeshProUGUI>();
-        label.text = "Maintenez les deux barres a l'equilibre avec A D et <- ->\nSTART";
+        label.text = "Maintenez A/D pour garder la barre de gauche a l'equilibre et <- et -> pour la barre de droite.\nSTART";
         label.fontSize = 30f;
         label.color = Color.black;
         label.alignment = TextAlignmentOptions.Center;
@@ -397,6 +409,16 @@ public class BalanceMiniGameManager : MonoBehaviour
             unstablePenaltyTimer -= unstableScorePenaltyInterval;
             score = Mathf.Max(0, score - unstableScorePenalty);
         }
+    }
+
+    private void ApplyScorePenaltyOnce()
+    {
+        if (score <= 0)
+        {
+            return;
+        }
+
+        score = Mathf.Max(0, score - unstableScorePenalty);
     }
 
     private string GetFinalMessage()
