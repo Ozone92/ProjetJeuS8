@@ -20,6 +20,7 @@ public class DialogBoxHandler : MonoBehaviour
         {
             GameObject button = TMP_DefaultControls.CreateButton(new TMP_DefaultControls.Resources());
             button.transform.SetParent(buttonContainer.transform);
+            button.transform.localEulerAngles = Vector3.zero;
             button.GetComponentInChildren<TMP_Text>().text = "Continuer";
             button.GetComponentInChildren<Button>().onClick.AddListener(() =>
             {
@@ -48,6 +49,7 @@ public class DialogBoxHandler : MonoBehaviour
 
                 GameObject button = TMP_DefaultControls.CreateButton(new TMP_DefaultControls.Resources());
                 button.transform.SetParent(buttonContainer.transform);
+                button.transform.localEulerAngles = Vector3.zero;
                 button.GetComponentInChildren<TMP_Text>().text =
                     dialogChoice.text != "" ? dialogChoice.text : "Continuer";
                 button.GetComponentInChildren<Button>().onClick.AddListener(() =>
