@@ -2359,7 +2359,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CycleManager
   professor: {fileID: 478386996}
   playerStats: {fileID: 11400000, guid: 9f2f0ae3b15e67cdd9a60f8a24eafe79, type: 2}
-  jeuManagerPrefab: {fileID: 7685992167769113248, guid: f77dd76f8d0749d85b2db8c057eb9092, type: 3}
+  jeuManagerPrefab: {fileID: 439859894723535506, guid: b11d0fab82eff5af19f1490c77699221, type: 3}
 --- !u!4 &1951377955
 Transform:
   m_ObjectHideFlags: 0

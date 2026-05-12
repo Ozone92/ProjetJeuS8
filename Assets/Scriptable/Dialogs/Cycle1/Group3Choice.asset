@@ -17,7 +17,7 @@ MonoBehaviour:
     speaker: Cousin
     text: "Ke kon mets dans l\u2019soda ?"
     cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
-    cameraRotation: {x: 0, y: 0, z: 0}
+    cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: Utiliser du naturel
       idToGo: Other

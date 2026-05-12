@@ -16,7 +16,7 @@ MonoBehaviour:
   - id: Begin
     speaker: HB
     text: Enfin t'es la ! Aller, depeche toi !
-    cameraPosition: {x: -128, y: 0.171, z: 0.283}
+    cameraPosition: {x: -0.128, y: 0.171, z: 0.384}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
@@ -28,7 +28,7 @@ MonoBehaviour:
     text: "T\u2019as int\xE9r\xEAt \xE0 \xEAtre plus s\xE9rieux pour ce tp, je veux
       une note parfaite. J'esp\xE8re au moins que tu sais comment on centrifuge une
       mol\xE9cule \xE0 ion positif"
-    cameraPosition: {x: -0.032, y: 0.1556, z: 0.384}
+    cameraPosition: {x: -0.032, y: 0.1556, z: 0.5145}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 

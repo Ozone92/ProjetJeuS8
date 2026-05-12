@@ -65,7 +65,7 @@ MonoBehaviour:
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
     - text: 
-      idToGo: Rival2
+      idToGo: 
       statsToChange:
       - name: C1G2
         amount: 1
