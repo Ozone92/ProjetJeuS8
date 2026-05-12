@@ -4,37 +4,61 @@ using UnityEngine.UI;
 
 public class DialogBoxHandler : MonoBehaviour
 {
-    public bool ChoiceMade { get; private set; } =  false;
+    public bool ChoiceMade { get; private set; } = false;
     public string ChoiceIndex { get; private set; } = "";
 
     [SerializeField] private TMP_Text speakerText;
     [SerializeField] private TMP_Text dialogText;
     [SerializeField] private GameObject buttonContainer;
 
-    public void fill(DialogData.Dialog dialog)
+    public void fill(DialogData.Dialog dialog, PlayerStats stats)
     {
         speakerText.text = dialog.speaker;
         dialogText.text = dialog.text;
 
         if (dialog.choices == null || dialog.choices.Count == 0)
         {
-            GameObject button = TMP_DefaultControls.CreateButton( new TMP_DefaultControls.Resources() );
+            GameObject button = TMP_DefaultControls.CreateButton(new TMP_DefaultControls.Resources());
             button.transform.SetParent(buttonContainer.transform);
+            button.transform.localEulerAngles = Vector3.zero;
             button.GetComponentInChildren<TMP_Text>().text = "Continuer";
             button.GetComponentInChildren<Button>().onClick.AddListener(() =>
             {
                 ChoiceMade = true;
+                ChoiceIndex = "";
             });
         }
         else
         {
             foreach (var dialogChoice in dialog.choices)
             {
-                GameObject button = TMP_DefaultControls.CreateButton( new TMP_DefaultControls.Resources() );
+                bool conditionsOk = true;
+                foreach (var condition in dialogChoice.minimalCondition)
+                {
+                    if (stats.Get(condition.name) < condition.amount)
+                    {
+                        conditionsOk = false;
+                        break;
+                    }
+                }
+
+                if (!conditionsOk)
+                {
+                    continue;
+                }
+
+                GameObject button = TMP_DefaultControls.CreateButton(new TMP_DefaultControls.Resources());
                 button.transform.SetParent(buttonContainer.transform);
-                button.GetComponentInChildren<TMP_Text>().text = dialogChoice.text != "" ? dialogChoice.text : "Continuer";
+                button.transform.localEulerAngles = Vector3.zero;
+                button.GetComponentInChildren<TMP_Text>().text =
+                    dialogChoice.text != "" ? dialogChoice.text : "Continuer";
                 button.GetComponentInChildren<Button>().onClick.AddListener(() =>
                 {
+                    foreach (var statToChange in dialogChoice.statsToChange)
+                    {
+                        stats.Add(statToChange.name, statToChange.amount);
+                    }
+
                     ChoiceMade = true;
                     ChoiceIndex = dialogChoice.idToGo;
                 });

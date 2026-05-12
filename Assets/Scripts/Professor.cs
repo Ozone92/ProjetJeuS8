@@ -1,30 +1,37 @@
 using UnityEngine;
 
-public class Professor : MonoBehaviour, IInteractable
+public class Professor : MonoBehaviour
 {
+    [SerializeField] private CycleManager cycleManager;
     [SerializeField] private PlayerStats playerStats;
     
-    [SerializeField] private DialogData startDialog;
-    [SerializeField] private DialogData happyDialog;
-    [SerializeField] private DialogData unhappyDialog;
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        StartCoroutine(startDialog.Play());
-    }
+    [SerializeField] private DialogData cycle0Dialog;
+    [SerializeField] private DialogData cycle1Dialog;
+    [SerializeField] private DialogData cycle2Dialog;
+    [SerializeField] private DialogData cycle3Dialog;
 
-    public void Interact()
+    public void PlayStartDialog()
     {
-        var happyStat = playerStats.Get("happy");
-        
-        if (happyStat > 0)
+        DialogData toPlay = null;
+        switch (cycleManager.CurrentCycle)
         {
-            StartCoroutine(happyDialog.Play());
+            case 0:
+                toPlay = cycle0Dialog;
+                break;
+            case 1:
+                toPlay = cycle1Dialog;
+                break;
+            case 2:
+                toPlay = cycle2Dialog;
+                break;
+            case 3:
+                toPlay = cycle3Dialog;
+                break;
         }
-        else if (happyStat < 0)
+
+        if (toPlay != null)
         {
-            StartCoroutine(unhappyDialog.Play());
+            StartCoroutine(toPlay.Play());
         }
     }
 }
