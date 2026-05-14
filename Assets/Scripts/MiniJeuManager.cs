@@ -23,7 +23,7 @@ public class MiniJeuManager : MonoBehaviour
     public int Score { get; private set; }
     public bool JeuTermine { get; private set; }
     
-    private float tempsRestant = 60f; 
+    private float tempsRestant = 20f; 
     private bool jeuEnCours = false; 
     private bool jeuTermine = false;
 

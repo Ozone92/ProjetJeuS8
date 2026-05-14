@@ -32,9 +32,9 @@ public class BalanceMiniGameManager : MonoBehaviour
     private float remainingTime;
     private float stableTime;
     private float unstablePenaltyTimer;
-    private int score;
+    public int score;
     private bool gameRunning;
-    private bool gameEnded;
+    public bool gameEnded;
     private bool wasStable = true;
 
     private void Awake()

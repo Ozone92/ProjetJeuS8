@@ -8,17 +8,14 @@ public class PlayerStats : ScriptableObject
 
     public float Get(string key)
     {
-        if (!key.Contains("CycleFinish"))
-        {
-            Debug.Log($"Stats Get: {key}: {Stats.GetValueOrDefault(key, 0f)}");
-        }
+        // Debug.Log($"Stats Get: {key}: {Stats.GetValueOrDefault(key, 0f)}");
         
         return Stats.GetValueOrDefault(key, 0f);
     }
 
     public void Add(string key, float value)
     {
-        Debug.Log($"Stats Add: {key}: {value}");
+        // Debug.Log($"Stats Add: {key}: {value}");
         if (!Stats.TryAdd(key, value))
         {
             Stats[key] += value;
