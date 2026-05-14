@@ -2922,7 +2922,7 @@ MonoBehaviour:
   professor: {fileID: 478386996}
   playerStats: {fileID: 11400000, guid: 9f2f0ae3b15e67cdd9a60f8a24eafe79, type: 2}
   CleaningGameManagerPrefab: {fileID: 439859894723535506, guid: b11d0fab82eff5af19f1490c77699221, type: 3}
-  BalanceGameManagerPrefab: {fileID: 0}
+  BalanceGameManagerPrefab: {fileID: 3691219398680585968, guid: ea6ca6af6e6047119a46cbff7635f95e, type: 3}
 --- !u!4 &1951377955
 Transform:
   m_ObjectHideFlags: 0
