@@ -32,6 +32,7 @@ public class DialogData : ScriptableObject
         public string text;
 
         public bool useDefaultCameraTransform;
+        public bool useSpecificCameraTransform;
         public Vector3 cameraPosition;
         public Vector3 cameraRotation;
 
@@ -40,14 +41,14 @@ public class DialogData : ScriptableObject
 
     public static bool InDialog { get; private set; } = false;
 
-    [Header("Dialogs")]
-    public Dialog[] dialogs;
+    [Header("Dialogs")] public Dialog[] dialogs;
     public DialogBoxHandler dialogBoxPrefab;
     public PlayerStats playerStats;
 
-    [Header("Default Camera Setup")]
-    public Vector3 defaultCameraPosition;
+    [Header("Default Camera Setup")] public Vector3 defaultCameraPosition;
     public Vector3 defaultCameraRotation;
+
+    [Header("Camera Transform Mapper")] public CameraTransformMapper cameraTransformMapper;
 
     public IEnumerator Play()
     {
@@ -78,6 +79,12 @@ public class DialogData : ScriptableObject
             {
                 dialogCamera.transform.position = defaultCameraPosition;
                 dialogCamera.transform.eulerAngles = defaultCameraRotation;
+            }
+            else if (!dialog.useSpecificCameraTransform && cameraTransformMapper &&
+                     cameraTransformMapper.TryGet(dialog.speaker, out var transform))
+            {
+                dialogCamera.transform.position = transform.Item1;
+                dialogCamera.transform.eulerAngles = transform.Item2;
             }
             else
             {
