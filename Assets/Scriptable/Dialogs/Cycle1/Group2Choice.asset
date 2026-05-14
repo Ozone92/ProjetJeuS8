@@ -16,6 +16,8 @@ MonoBehaviour:
   - id: Begin
     speaker: Bum
     text: Vous voulez faire quoi du coup ?
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -62,6 +64,8 @@ MonoBehaviour:
   - id: Other
     speaker: Rival
     text: "Tu penses vraiment que c\u2019est mieux ?"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -72,6 +76,8 @@ MonoBehaviour:
   - id: Other2
     speaker: Vous
     text: "Je te promets que c\u2019est le cas ! Cette fois-ci je ne me trompe pas"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -82,6 +88,8 @@ MonoBehaviour:
   - id: Other3
     speaker: Rival
     text: "Je te fais confiance, a la moindre erreur par contre\u2026"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -92,6 +100,8 @@ MonoBehaviour:
   - id: Other4
     speaker: Bum
     text: "Vous avez l\u2019air de vous y connaitre, je vous laisse faire"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -104,6 +114,8 @@ MonoBehaviour:
   - id: Your
     speaker: Rival
     text: Tu vois, je propose toujours les meilleures solutions
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -114,6 +126,8 @@ MonoBehaviour:
   - id: Your2
     speaker: Bum
     text: "Simple, efficace et sans probl\xE8me de droit d\u2019auteur."
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -125,3 +139,6 @@ MonoBehaviour:
       minimalCondition: []
   dialogBoxPrefab: {fileID: -4762232498145539390, guid: cab5af825cf7e2b7aa72d0051b9ef9a0, type: 3}
   playerStats: {fileID: 11400000, guid: 9f2f0ae3b15e67cdd9a60f8a24eafe79, type: 2}
+  defaultCameraPosition: {x: 0, y: 0, z: 0}
+  defaultCameraRotation: {x: 0, y: 0, z: 0}
+  cameraTransformMapper: {fileID: 11400000, guid: 5e1cc460f09bac7738b0590e54fc3b15, type: 2}

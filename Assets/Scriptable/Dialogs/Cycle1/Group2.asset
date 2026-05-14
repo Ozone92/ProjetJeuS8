@@ -17,6 +17,8 @@ MonoBehaviour:
     speaker: Bum
     text: "On pourra verser la moiti\xE9 de mon coca dans notre soda, ce sera solide.
       L\u2019autre moiti\xE9 de l\u2019eau gazeuse, \xE7a suffira."
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -28,6 +30,8 @@ MonoBehaviour:
     speaker: Rival
     text: "C\u2019est quoi cette id\xE9e de salopard. Si tu veux on copie juste les
       ingr\xE9dients du coca mais on va pas utiliser ta canette ti\xE8de."
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -38,6 +42,8 @@ MonoBehaviour:
   - id: Bum2
     speaker: Bum
     text: "Je viens de l\u2019acheter au Lidl, elle est encore fra\xEEche TwT"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -48,6 +54,8 @@ MonoBehaviour:
   - id: Vous1
     speaker: Vous
     text: Il a raison c important de boire frais
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -61,6 +69,8 @@ MonoBehaviour:
     speaker: Rival
     text: "Vous me cassez les couilles, on va juste copier les ingr\xE9dients du
       coca c bon."
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -72,3 +82,6 @@ MonoBehaviour:
       minimalCondition: []
   dialogBoxPrefab: {fileID: -4762232498145539390, guid: cab5af825cf7e2b7aa72d0051b9ef9a0, type: 3}
   playerStats: {fileID: 11400000, guid: 9f2f0ae3b15e67cdd9a60f8a24eafe79, type: 2}
+  defaultCameraPosition: {x: 0, y: 0, z: 0}
+  defaultCameraRotation: {x: 0, y: 0, z: 0}
+  cameraTransformMapper: {fileID: 11400000, guid: 5e1cc460f09bac7738b0590e54fc3b15, type: 2}

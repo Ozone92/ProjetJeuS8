@@ -15,9 +15,11 @@ MonoBehaviour:
   dialogs:
   - id: Begin
     speaker: Professeur
-    text: "C\u2019est bon les groupes sont faits vous pouvez donc commencer. L\u2019objectif
-      de ce TP est de faire un soda. A la fin de la s\xE9ance, vous pourrez go\xFBter
-      vos sodas et je vous donnerai une note. "
+    text: "C\u2019est bon les groupes sont faits vous pouvez donc commencer.A la
+      fin de la s\xE9ance, vous pourrez go\xFBter vos sodas et je vous donnerai une
+      note. "
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.065, y: 0.171, z: -0.235}
     cameraRotation: {x: 0, y: 0, z: 0}
     choices:
@@ -29,8 +31,13 @@ MonoBehaviour:
     speaker: Professeur
     text: "La premi\xE8re partie consiste \xE0 choisir le bon dosage pour les ingr\xE9dients
       qui sont les sucres ou edulcorants, les ar\xF4mes et les colorants. "
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.065, y: 0.171, z: -0.235}
     cameraRotation: {x: 0, y: 0, z: 0}
     choices: []
   dialogBoxPrefab: {fileID: -4762232498145539390, guid: cab5af825cf7e2b7aa72d0051b9ef9a0, type: 3}
   playerStats: {fileID: 11400000, guid: 9f2f0ae3b15e67cdd9a60f8a24eafe79, type: 2}
+  defaultCameraPosition: {x: 0, y: 0, z: 0}
+  defaultCameraRotation: {x: 0, y: 0, z: 0}
+  cameraTransformMapper: {fileID: 11400000, guid: 5e1cc460f09bac7738b0590e54fc3b15, type: 2}

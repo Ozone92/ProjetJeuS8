@@ -16,6 +16,8 @@ MonoBehaviour:
   - id: Begin
     speaker: Vieux
     text: "Le petit peu \xE0 peine tenir les objets et voir le plan de travail."
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.013, y: 0.171, z: 0.064}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -26,6 +28,8 @@ MonoBehaviour:
   - id: Cousin1
     speaker: Cousin
     text: Naaan je veux le faire, svp laissez moi faire !!
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -37,6 +41,8 @@ MonoBehaviour:
     speaker: Vieux
     text: "Ca me connait le nettoyage et la st\xE9rilisation. Je cookais de la meth
       \xE0 l\u2019\xE9poque."
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.013, y: 0.171, z: 0.064}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -47,6 +53,8 @@ MonoBehaviour:
   - id: Cousin2
     speaker: Cousin
     text: "C\u2019est quoi la meth ?"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -58,6 +66,8 @@ MonoBehaviour:
     speaker: Vous
     text: "hum\u2026 oublie *il faut que j'emp\xEAche mon cousin de trop le fr\xE9quenter
       lui\u2026*"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -68,6 +78,8 @@ MonoBehaviour:
   - id: Choix
     speaker: Vous
     text: Qui s'en occupe ?
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -96,6 +108,8 @@ MonoBehaviour:
   - id: Cousin_Vous1
     speaker: Vous
     text: Vazy le couz, fais attention par contre
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -106,6 +120,8 @@ MonoBehaviour:
   - id: Cousin_Cousin1
     speaker: Cousin
     text: "Youhou merci les gars ca va \xEAtre trop marrant"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -117,6 +133,8 @@ MonoBehaviour:
     speaker: Vieux
     text: "J\u2019avais pas autant d'\xE9nergie quand j\u2019avais son \xE2ge, c\u2019est
       beau la jeunesse"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.013, y: 0.171, z: 0.064}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -127,6 +145,8 @@ MonoBehaviour:
   - id: Cousin_Vous2
     speaker: Vous
     text: Concentrons nous sur le tp svp
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.013, y: 0.171, z: 0.064}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -139,6 +159,8 @@ MonoBehaviour:
   - id: Vieux_Vous1
     speaker: Vous
     text: Ok heisenberg on te laisse cook
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -149,6 +171,8 @@ MonoBehaviour:
   - id: Vieux_Vieux1
     speaker: Vieux
     text: Jesse lets cook
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.013, y: 0.171, z: 0.064}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -159,6 +183,8 @@ MonoBehaviour:
   - id: Vieux_Cousin1
     speaker: Cousin
     text: c qui jesse ? je veux bien aider moi
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -170,6 +196,8 @@ MonoBehaviour:
     speaker: Vous
     text: "\u2026 va aider je te regarde j\u2019ai besoin de m\u2019assoir c\u2019est
       trop"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -182,6 +210,8 @@ MonoBehaviour:
   - id: Vous_Vous1
     speaker: Vous
     text: "Je m\u2019en occupe."
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -192,6 +222,8 @@ MonoBehaviour:
   - id: Vous_Vieux1
     speaker: Vieux
     text: Ok pas de soucis.
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.013, y: 0.171, z: 0.064}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -202,6 +234,8 @@ MonoBehaviour:
   - id: Vous_Cousin1
     speaker: Cousin
     text: "Ooh, pas dr\xF4le je voulais jouer ausi."
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -213,6 +247,8 @@ MonoBehaviour:
     speaker: Vous
     text: "On ne joue pas l\xE0 on travaille, je vais te laisser jouer sur mon pc
       ce soir \xE0 la maison tkt."
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -223,6 +259,8 @@ MonoBehaviour:
   - id: Vous_Cousin2
     speaker: Cousin
     text: "Ok t\u2019as promis."
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -234,3 +272,6 @@ MonoBehaviour:
       minimalCondition: []
   dialogBoxPrefab: {fileID: -4762232498145539390, guid: cab5af825cf7e2b7aa72d0051b9ef9a0, type: 3}
   playerStats: {fileID: 11400000, guid: 9f2f0ae3b15e67cdd9a60f8a24eafe79, type: 2}
+  defaultCameraPosition: {x: 0, y: 0, z: 0}
+  defaultCameraRotation: {x: 0, y: 0, z: 0}
+  cameraTransformMapper: {fileID: 11400000, guid: 5e1cc460f09bac7738b0590e54fc3b15, type: 2}

@@ -16,6 +16,8 @@ MonoBehaviour:
   - id: Begin
     speaker: Cousin
     text: "Ke kon mets dans l\u2019soda ?"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -62,6 +64,8 @@ MonoBehaviour:
   - id: Other
     speaker: Vieux
     text: "Il faut faire confiance \xE0 ces anc\xEAtres tu sais"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.013, y: 0.171, z: 0.064}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -72,6 +76,8 @@ MonoBehaviour:
   - id: Other2
     speaker: Cousin
     text: "Moi je fais confiance a mon couz, je suis sur il sait ce qu\u2019il fait"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -83,6 +89,8 @@ MonoBehaviour:
     speaker: Vieux
     text: "C\u2019est bien de nous faire confiance, c\u2019est important la confiance
       de nos jours"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.013, y: 0.171, z: 0.064}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -93,6 +101,8 @@ MonoBehaviour:
   - id: Your2
     speaker: Cousin
     text: "On va tout d\xE9chirer !"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -104,3 +114,6 @@ MonoBehaviour:
       minimalCondition: []
   dialogBoxPrefab: {fileID: -4762232498145539390, guid: cab5af825cf7e2b7aa72d0051b9ef9a0, type: 3}
   playerStats: {fileID: 11400000, guid: 9f2f0ae3b15e67cdd9a60f8a24eafe79, type: 2}
+  defaultCameraPosition: {x: 0, y: 0, z: 0}
+  defaultCameraRotation: {x: 0, y: 0, z: 0}
+  cameraTransformMapper: {fileID: 11400000, guid: 5e1cc460f09bac7738b0590e54fc3b15, type: 2}

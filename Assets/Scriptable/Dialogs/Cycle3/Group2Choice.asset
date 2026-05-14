@@ -17,6 +17,8 @@ MonoBehaviour:
     speaker: Bum
     text: "Bon, on fait quoi ? J\u2019ai vraiment confiance en ma m\xE9thode, mais
       si tu veux faire autre chose je te suis."
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -57,6 +59,8 @@ MonoBehaviour:
   - id: Your
     speaker: Rival
     text: "Tu penses vraiment qu\u2019on peut lui faire confiance ?"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -68,6 +72,8 @@ MonoBehaviour:
     speaker: Vous
     text: "J\u2019ai un bon feeling sur son id\xE9e. Je pense vraiment que c\u2019est
       la meilleure"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -79,6 +85,8 @@ MonoBehaviour:
     speaker: HB
     text: "Faites moi confiance pour une fois, vraiment j\u2019ai eu un \xE9clair
       de g\xE9nie"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -91,6 +99,8 @@ MonoBehaviour:
   - id: Other
     speaker: Rival
     text: "Ca m\u2019a l\u2019air mieux que ce que propose l\u2019autre"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -101,6 +111,8 @@ MonoBehaviour:
   - id: Other2
     speaker: Bum
     text: "Pourtant je la sentais bien cette id\xE9e"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -111,6 +123,8 @@ MonoBehaviour:
   - id: Other3
     speaker: Vous
     text: "Je pense vraiment que la solution de l\u2019autre groupe est mieux"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -122,3 +136,6 @@ MonoBehaviour:
       minimalCondition: []
   dialogBoxPrefab: {fileID: -4762232498145539390, guid: cab5af825cf7e2b7aa72d0051b9ef9a0, type: 3}
   playerStats: {fileID: 11400000, guid: 9f2f0ae3b15e67cdd9a60f8a24eafe79, type: 2}
+  defaultCameraPosition: {x: 0, y: 0, z: 0}
+  defaultCameraRotation: {x: 0, y: 0, z: 0}
+  cameraTransformMapper: {fileID: 11400000, guid: 5e1cc460f09bac7738b0590e54fc3b15, type: 2}

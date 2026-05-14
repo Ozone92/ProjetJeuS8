@@ -17,6 +17,8 @@ MonoBehaviour:
     speaker: Bum
     text: "Les gars moi j\u2019ai jamais fait la vaisselle chez moi, faut pas compter
       sur moi."
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -27,6 +29,8 @@ MonoBehaviour:
   - id: Vous1
     speaker: Vous
     text: "S\xE9rieux t\u2019abuse"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -38,6 +42,8 @@ MonoBehaviour:
     speaker: Rival
     text: "e suis s\xFBr qu\u2019il nettoyait quand m\xEAme mieux que toi. je pr\xE9f\xE8re
       que ce soit lui que toi"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -48,6 +54,8 @@ MonoBehaviour:
   - id: Vous2
     speaker: Vous
     text: ...
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -58,6 +66,8 @@ MonoBehaviour:
   - id: Bum2
     speaker: Bum
     text: "MDR en vrai ca a l\u2019air marrant j'suis chaud"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -68,6 +78,8 @@ MonoBehaviour:
   - id: Vous3
     speaker: Vous
     text: "Sinon rival, si tu veux que ca se passe bien tu peux le faire toi m\xEAme"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -79,6 +91,8 @@ MonoBehaviour:
     speaker: Rival
     text: "T\u2019as vraiment besoin que quelqu\u2019un fasse le travail \xE0 ta
       place hein"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -89,6 +103,8 @@ MonoBehaviour:
   - id: Choix
     speaker: Vous
     text: Qui s'en occupe ?
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -117,6 +133,8 @@ MonoBehaviour:
   - id: Bum_Vous1
     speaker: Vous
     text: "Bah vazy laissons le bum faire alors. Vu que t\u2019as un pb avec moi."
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -127,6 +145,8 @@ MonoBehaviour:
   - id: Bum_Rival1
     speaker: Rival
     text: "Vaut mieux ca que tu me foires mon tp \xE0 nouveau."
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -138,6 +158,8 @@ MonoBehaviour:
     speaker: Rival
     text: "Super l\u2019ambiance dans ce groupe les gars. Prenez un peu plus de fun
       no big deal."
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -148,6 +170,8 @@ MonoBehaviour:
   - id: Bum_Vous2
     speaker: Vous
     text: Oe mb
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -158,6 +182,8 @@ MonoBehaviour:
   - id: Bum_Rival2
     speaker: Rival
     text: T'as raison
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -170,6 +196,8 @@ MonoBehaviour:
   - id: Rival_Vous1
     speaker: Vous
     text: "Fais le toi Rival vu que t\u2019as pas l\u2019air de me faire confiance."
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -181,6 +209,8 @@ MonoBehaviour:
     speaker: Rival
     text: "Difficile de te faire confiance apr\xE8s que t\u2019aies foir\xE9 notre
       dernier tp"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -191,6 +221,8 @@ MonoBehaviour:
   - id: Rival_Bum1
     speaker: Bum
     text: "Wah les gars c\u2019est pas si s\xE9rieux"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -201,6 +233,8 @@ MonoBehaviour:
   - id: Rival_Rival2
     speaker: Rival
     text: Prends des notes je vais te montrer comment on fait.
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -213,6 +247,8 @@ MonoBehaviour:
   - id: Vous_Vous1
     speaker: Vous
     text: Je vais le faire.
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -223,6 +259,8 @@ MonoBehaviour:
   - id: Vous_Rival1
     speaker: Rival
     text: "T\u2019as int\xE9r\xEAt \xE0 te rattraper pour la derni\xE8re fois alors."
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -233,6 +271,8 @@ MonoBehaviour:
   - id: Vous_Bum1
     speaker: Bum
     text: Moi ca ve va
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -244,3 +284,6 @@ MonoBehaviour:
       minimalCondition: []
   dialogBoxPrefab: {fileID: -4762232498145539390, guid: cab5af825cf7e2b7aa72d0051b9ef9a0, type: 3}
   playerStats: {fileID: 11400000, guid: 9f2f0ae3b15e67cdd9a60f8a24eafe79, type: 2}
+  defaultCameraPosition: {x: 0, y: 0, z: 0}
+  defaultCameraRotation: {x: 0, y: 0, z: 0}
+  cameraTransformMapper: {fileID: 11400000, guid: 5e1cc460f09bac7738b0590e54fc3b15, type: 2}

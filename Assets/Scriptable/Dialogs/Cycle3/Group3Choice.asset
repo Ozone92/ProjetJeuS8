@@ -17,6 +17,8 @@ MonoBehaviour:
     speaker: Cousin
     text: "Tu as pu choper des infos ? Tu veux qu\u2019on utilise quelle m\xE9thode
       ?"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -57,6 +59,8 @@ MonoBehaviour:
   - id: Your
     speaker: Cousin
     text: "Je ressors le tiktok\u2026"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -68,6 +72,8 @@ MonoBehaviour:
     speaker: Vieux
     text: "La vivacit\xE9 de la jeunesse m'impressionnera toujours, telle une anguille
       dans un champ de coton."
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.013, y: 0.171, z: 0.064}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -78,6 +84,8 @@ MonoBehaviour:
   - id: Your3
     speaker: Vous
     text: "Ne fait pas attention \xE0 ce qu\u2019il dit, la vieillesse fait des ravages"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.013, y: 0.171, z: 0.064}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -88,6 +96,8 @@ MonoBehaviour:
   - id: Your4
     speaker: Cousin
     text: "Je l\u2019ai retrouv\xE9e, on peut commencer"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -100,6 +110,8 @@ MonoBehaviour:
   - id: Other
     speaker: Vieux
     text: "Une id\xE9e forte int\xE9ressante"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.013, y: 0.171, z: 0.064}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -110,6 +122,8 @@ MonoBehaviour:
   - id: Other2
     speaker: Cousin
     text: "Mon tiktok il est mieux quand-m\xEAme"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -120,6 +134,8 @@ MonoBehaviour:
   - id: Other3
     speaker: Vieux
     text: "Il faut savoir \xE9couter la sagesse des plus \xE2g\xE9s"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.013, y: 0.171, z: 0.064}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -130,6 +146,8 @@ MonoBehaviour:
   - id: Other4
     speaker: Vous
     text: "Du calme, je n\u2019ai pas encore vieux comme toi"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.013, y: 0.171, z: 0.064}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -140,6 +158,8 @@ MonoBehaviour:
   - id: Other5
     speaker: Cousin
     text: Bon, on fait ton truc pour finir le soda ?
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
     cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
@@ -151,3 +171,6 @@ MonoBehaviour:
       minimalCondition: []
   dialogBoxPrefab: {fileID: -4762232498145539390, guid: cab5af825cf7e2b7aa72d0051b9ef9a0, type: 3}
   playerStats: {fileID: 11400000, guid: 9f2f0ae3b15e67cdd9a60f8a24eafe79, type: 2}
+  defaultCameraPosition: {x: 0, y: 0, z: 0}
+  defaultCameraRotation: {x: 0, y: 0, z: 0}
+  cameraTransformMapper: {fileID: 11400000, guid: 5e1cc460f09bac7738b0590e54fc3b15, type: 2}
