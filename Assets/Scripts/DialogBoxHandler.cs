@@ -1,11 +1,16 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-public class DialogBoxHandler : MonoBehaviour
+public class DialogBoxHandler : MonoBehaviour, DialogAction.IDialogActionMapActions
 {
     public bool ChoiceMade { get; private set; } = false;
     public string ChoiceIndex { get; private set; } = "";
+
+    private List<DialogData.Choice> choices = null;
+    private PlayerStats playerStats = null;
 
     [SerializeField] private TMP_Text speakerText;
     [SerializeField] private TMP_Text dialogText;
@@ -13,6 +18,9 @@ public class DialogBoxHandler : MonoBehaviour
 
     public void fill(DialogData.Dialog dialog, PlayerStats stats)
     {
+        this.choices = dialog.choices;
+        this.playerStats = stats;
+        
         speakerText.text = dialog.speaker;
         dialogText.text = dialog.text;
 
@@ -30,6 +38,7 @@ public class DialogBoxHandler : MonoBehaviour
         }
         else
         {
+            int currentBox = 1;
             foreach (var dialogChoice in dialog.choices)
             {
                 bool conditionsOk = true;
@@ -51,7 +60,7 @@ public class DialogBoxHandler : MonoBehaviour
                 button.transform.SetParent(buttonContainer.transform);
                 button.transform.localEulerAngles = Vector3.zero;
                 button.GetComponentInChildren<TMP_Text>().text =
-                    dialogChoice.text != "" ? dialogChoice.text : "Continuer";
+                    dialogChoice.text != "" ? ($"({currentBox}) {dialogChoice.text}") : "Continuer";
                 button.GetComponentInChildren<Button>().onClick.AddListener(() =>
                 {
                     foreach (var statToChange in dialogChoice.statsToChange)
@@ -62,7 +71,50 @@ public class DialogBoxHandler : MonoBehaviour
                     ChoiceMade = true;
                     ChoiceIndex = dialogChoice.idToGo;
                 });
+
+                currentBox++;
             }
+        }
+    }
+
+    public void OnNext(InputAction.CallbackContext context)
+    {
+        if (!ChoiceMade)
+        {
+            if (choices is { Count: 1 })
+            {
+                DialogData.Choice selectedChoice = choices[0];
+
+                foreach (var statToChange in selectedChoice.statsToChange)
+                {
+                    playerStats.Add(statToChange.name, statToChange.amount);
+                }
+            
+                ChoiceMade = true;
+                ChoiceIndex = selectedChoice.idToGo;
+            }
+            else if (choices is { Count: 0 })
+            {
+                ChoiceMade = true;
+                ChoiceIndex = "";
+            }
+        }
+    }
+
+    public void OnChoice(InputAction.CallbackContext context)
+    {
+        int pressed = int.Parse(context.control.name);
+        if (!ChoiceMade && choices != null && choices.Count >= pressed)
+        {
+            DialogData.Choice selectedChoice = choices[pressed - 1];
+
+            foreach (var statToChange in selectedChoice.statsToChange)
+            {
+                playerStats.Add(statToChange.name, statToChange.amount);
+            }
+            
+            ChoiceMade = true;
+            ChoiceIndex = selectedChoice.idToGo;
         }
     }
 }
