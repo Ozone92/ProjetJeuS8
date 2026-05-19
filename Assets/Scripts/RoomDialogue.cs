@@ -18,7 +18,7 @@ public class RoomDialogue : MonoBehaviour
         yield return new WaitUntil(() => playerStats.Get("Reveil") != 0f);
         playerTransform.SetPositionAndRotation(
             new Vector3(-0.039f, 0.02f, -1.828f),
-            Quaternion.Euler(0f, 0f, 0f)
+            Quaternion.Euler(0f, 90f, 0f)
         );
     }
 
