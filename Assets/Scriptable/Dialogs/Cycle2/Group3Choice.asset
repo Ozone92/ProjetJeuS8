@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogData
   dialogs:
   - id: Begin
-    speaker: Vieux
+    speaker: Walter
     text: "Le petit peu \xE0 peine tenir les objets et voir le plan de travail."
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -26,7 +26,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Cousin1
-    speaker: Cousin
+    speaker: Titouan
     text: Naaan je veux le faire, svp laissez moi faire !!
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -38,7 +38,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Vieux2
-    speaker: Vieux
+    speaker: Walter
     text: "Ca me connait le nettoyage et la st\xE9rilisation. Je cookais de la meth
       \xE0 l\u2019\xE9poque."
     useDefaultCameraTransform: 0
@@ -51,7 +51,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Cousin2
-    speaker: Cousin
+    speaker: Titouan
     text: "C\u2019est quoi la meth ?"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -118,7 +118,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Cousin_Cousin1
-    speaker: Cousin
+    speaker: Titouan
     text: "Youhou merci les gars ca va \xEAtre trop marrant"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -130,7 +130,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Cousin_Vieux1
-    speaker: Vieux
+    speaker: Walter
     text: "J\u2019avais pas autant d'\xE9nergie quand j\u2019avais son \xE2ge, c\u2019est
       beau la jeunesse"
     useDefaultCameraTransform: 0
@@ -169,7 +169,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Vieux_Vieux1
-    speaker: Vieux
+    speaker: Walter
     text: Jesse lets cook
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -181,7 +181,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Vieux_Cousin1
-    speaker: Cousin
+    speaker: Titouan
     text: c qui jesse ? je veux bien aider moi
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -220,7 +220,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Vous_Vieux1
-    speaker: Vieux
+    speaker: Walter
     text: Ok pas de soucis.
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -232,7 +232,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Vous_Cousin1
-    speaker: Cousin
+    speaker: Titouan
     text: "Ooh, pas dr\xF4le je voulais jouer ausi."
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -257,7 +257,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Vous_Cousin2
-    speaker: Cousin
+    speaker: Titouan
     text: "Ok t\u2019as promis."
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0

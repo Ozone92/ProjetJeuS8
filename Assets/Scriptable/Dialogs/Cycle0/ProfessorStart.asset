@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogData
   dialogs:
   - id: Begin
-    speaker: Professeur
+    speaker: Professeur T
     text: "Je recommence pour les retardataires. L\u2019objectif de ce TP est de
       faire un soda. "
     useDefaultCameraTransform: 0
@@ -27,7 +27,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Prof2
-    speaker: Professeur
+    speaker: Professeur T
     text: "Les groupes sont presque form\xE9s. Choisissez un duo et rejoins-les."
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogData
   dialogs:
   - id: Begin
-    speaker: HB
+    speaker: Speed
     text: "Alors ? Quelle est la meilleure chose \xE0 faire selon toi ?"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -62,7 +62,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Other
-    speaker: HB
+    speaker: Speed
     text: Bizarre l'ambiance...
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -74,7 +74,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Other2
-    speaker: Nerd
+    speaker: Uryu
     text: "Le choix naturel aurait d\xFB s'imposer, mais si tu penses que cette solution
       est meilleure allons-y. "
     useDefaultCameraTransform: 0
@@ -83,7 +83,7 @@ MonoBehaviour:
     cameraRotation: {x: 0, y: 180, z: 0}
     choices: []
   - id: Your
-    speaker: Nerd
+    speaker: Uryu
     text: "Je vois que nous sommes sur la m\xEAme longueur d\u2019onde. Le naturel
       c\u2019est le mieux !"
     useDefaultCameraTransform: 0

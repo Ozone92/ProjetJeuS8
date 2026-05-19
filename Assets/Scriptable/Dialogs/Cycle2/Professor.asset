@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogData
   dialogs:
   - id: Begin
-    speaker: Professeur
+    speaker: Professeur T
     text: Maintenant, veuillez ranger et nettoyer vos paillasses avant de passer
       a la suite.
     useDefaultCameraTransform: 0

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogData
   dialogs:
   - id: Begin
-    speaker: HB
+    speaker: Speed
     text: "OK les gars laissez moi faire, j\u2019adore nettoyer des trucs."
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -38,8 +38,8 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: HB2
-    speaker: HB
-    text: Azy toi svp laisse moi faire.
+    speaker: Speed
+    text: Azy toi laisse moi faire.
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: -0.128, y: 0.171, z: 0.384}
@@ -50,8 +50,8 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Nerd1
-    speaker: Nerd
-    text: "T\u2019es sur t\u2019as bien \xE9cout\xE9 et tu sauras suivre le protocol
+    speaker: Uryu
+    text: "T\u2019es sur t\u2019as bien \xE9cout\xE9 et tu sauras suivre le protocole
       ? j\u2019ai pas envie de me salir je ne manipule pas moi."
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -63,7 +63,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: HB3
-    speaker: HB
+    speaker: Speed
     text: Mais tu connais bien le protocole pourtant.
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -75,7 +75,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Nerd2
-    speaker: Nerd
+    speaker: Uryu
     text: Vous vous reposez trop sur moi ca saoule, tu peux le faire toi sinon.
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -94,7 +94,7 @@ MonoBehaviour:
     cameraPosition: {x: -0.032, y: 0.1556, z: 0.5145}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
-    - text: HB
+    - text: Speed
       idToGo: HB_Vous1
       statsToChange:
       - name: GroupScore
@@ -102,7 +102,7 @@ MonoBehaviour:
       - name: TpScore
         amount: -1
       minimalCondition: []
-    - text: Nerd
+    - text: Uryu
       idToGo: Nerd_Vous1
       statsToChange:
       - name: GroupScore
@@ -129,7 +129,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: HB_Nerd1
-    speaker: Nerd
+    speaker: Uryu
     text: "T\u2019as int\xE9r\xEAt \xE0 g\xE9rer."
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -141,8 +141,8 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: HB_HB1
-    speaker: HB
-    text: '*flexes his muscles*'
+    speaker: Speed
+    text: '*Montre ses muscles*'
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: -0.128, y: 0.171, z: 0.384}
@@ -168,7 +168,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Nerd_Nerd1
-    speaker: Nerd
+    speaker: Uryu
     text: "Faut vraiment tout faire ici. Vous avez de la chance c\u2019est not\xE9."
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -180,7 +180,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Nerd_HB1
-    speaker: HB
+    speaker: Speed
     text: Azy tu me fais pas confiance ou quoi ?!
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -204,7 +204,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Nerd_HB2
-    speaker: HB
+    speaker: Speed
     text: Pffff...
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -230,7 +230,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Vous_Nerd1
-    speaker: Nerd
+    speaker: Uryu
     text: "T\u2019as int\xE9r\xEAt \xE0 g\xE9rer"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -242,7 +242,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Vous_HB1
-    speaker: HB
+    speaker: Speed
     text: "Oue vraiment, surtout vu comment tu forces j'tavais dit j\u2019\xE9tais
       chaud de le faire."
     useDefaultCameraTransform: 0

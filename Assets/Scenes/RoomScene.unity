@@ -1282,7 +1282,7 @@ PrefabInstance:
     - target: {fileID: 4598079601061931607, guid: 074122675a3ec5a429210a591f2632f9, type: 3}
       propertyPath: m_Resource
       value: 
-      objectReference: {fileID: 8300000, guid: 1999d1ca64a626e459c5eabab5a03643, type: 3}
+      objectReference: {fileID: 8300000, guid: 0b9463ad5b05d7a45bc587b4d0aa2266, type: 3}
     - target: {fileID: 8791238455986372113, guid: 074122675a3ec5a429210a591f2632f9, type: 3}
       propertyPath: m_Name
       value: BackgroundMusic

@@ -15,8 +15,9 @@ MonoBehaviour:
   dialogs:
   - id: 1
     speaker: Maman
-    text: Reveille toi mon cheri tu vas etre en retard
+    text: "R\xE9veille toi mon ch\xE9ri tu vas \xEAtre en retard !"
     useDefaultCameraTransform: 1
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0, y: 1, z: -10}
     cameraRotation: {x: 0, y: 0, z: 0}
     choices:
@@ -26,8 +27,9 @@ MonoBehaviour:
       minimalCondition: []
   - id: 2
     speaker: Vous
-    text: Argh... je deteste le lundi
+    text: "Argh... je d\xE9teste le lundi !"
     useDefaultCameraTransform: 1
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0, y: 1, z: -10}
     cameraRotation: {x: 0, y: 0, z: 0}
     choices:
@@ -37,8 +39,9 @@ MonoBehaviour:
       minimalCondition: []
   - id: 3
     speaker: Vous
-    text: Il est deja 8h50 ? Je vais etre en retard !
+    text: "Il est d\xE9j\xE0 8h50 ? Je vais \xEAtre en retard !"
     useDefaultCameraTransform: 1
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0, y: 1, z: -10}
     cameraRotation: {x: 0, y: 0, z: 0}
     choices:
@@ -52,6 +55,7 @@ MonoBehaviour:
     speaker: Maman
     text: N'oublie pas que tu as un TP de chimie aujourd'hui !
     useDefaultCameraTransform: 1
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0, y: 1, z: -10}
     cameraRotation: {x: 0, y: 0, z: 0}
     choices:
@@ -61,8 +65,10 @@ MonoBehaviour:
       minimalCondition: []
   - id: 5
     speaker: Vous
-    text: Mince j'avais oublie en plus ce salopard de Renji sera la
+    text: "Merde j'avais oubli\xE9 ! D\xE9j\xE0 que j'ai foir\xE9 le TP avec Xiao
+      la derni\xE8re fois et maintenant il me d\xE9teste..."
     useDefaultCameraTransform: 1
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0, y: 1, z: -10}
     cameraRotation: {x: 0, y: 0, z: 0}
     choices:
@@ -70,10 +76,20 @@ MonoBehaviour:
       idToGo: 6
       statsToChange: []
       minimalCondition: []
+  - id: 8
+    speaker: Vous
+    text: "En m\xEAme temps, je d\xE9teste la chimie je pourrais juste rester ici
+      et profiter de ma matin\xE9e..."
+    useDefaultCameraTransform: 1
+    useSpecificCameraTransform: 0
+    cameraPosition: {x: 0, y: 1, z: -10}
+    cameraRotation: {x: 0, y: 0, z: 0}
+    choices: []
   - id: 6
     speaker: Vous
     text: Qu'est ce que je vais faire ?
     useDefaultCameraTransform: 1
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0, y: 1, z: -10}
     cameraRotation: {x: 0, y: 0, z: 0}
     choices:
@@ -87,8 +103,10 @@ MonoBehaviour:
       minimalCondition: []
   - id: Choix1
     speaker: Vous
-    text: Bon j'imagine que j'ai pas le choix...
+    text: "Bon j'imagine que je n'ai pas le choix... Speed m'avait d\xE9j\xE0 pr\xE9venu
+      que le prof n'allait pas me l\xE2cher de toute fa\xE7on"
     useDefaultCameraTransform: 1
+    useSpecificCameraTransform: 0
     cameraPosition: {x: 0, y: 1, z: -10}
     cameraRotation: {x: 0, y: 0, z: 0}
     choices: []
@@ -96,3 +114,4 @@ MonoBehaviour:
   playerStats: {fileID: 11400000, guid: 9f2f0ae3b15e67cdd9a60f8a24eafe79, type: 2}
   defaultCameraPosition: {x: 0.781, y: 0.369, z: -1.683}
   defaultCameraRotation: {x: 19.442, y: -110.537, z: -2.048}
+  cameraTransformMapper: {fileID: 0}

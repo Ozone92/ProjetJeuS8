@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogData
   dialogs:
   - id: Begin
-    speaker: HB
+    speaker: Speed
     text: On peut faire comme les sodas existant. De ce que je vois sur ma canette,
       il y a beaucoup de tout
     useDefaultCameraTransform: 0
@@ -27,7 +27,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: nerdSain
-    speaker: Nerd
+    speaker: Uryu
     text: Si on veut quelque chose de plus sain, il faudrait mettre des sucres et
       colorants naturels.
     useDefaultCameraTransform: 0
@@ -40,7 +40,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: hbOlive
-    speaker: HB
+    speaker: Speed
     text: "OK.J\u2019ai vu des colorants naturels vert olive."
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -53,7 +53,7 @@ MonoBehaviour:
       minimalCondition: []
   - id: playerOlive
     speaker: Vous
-    text: vert olive mdrr
+    text: Vert olive MDRR
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: -0.128, y: 0.171, z: 0.384}
@@ -66,7 +66,7 @@ MonoBehaviour:
         amount: 1
       minimalCondition: []
   - id: nerdNaturel
-    speaker: Nerd
+    speaker: Uryu
     text: "Un peu de s\xE9rieux, go partir sur une ar\xF4me menthe avec des colorants
       naturels menthe aussi. Pour les sucres, le sirop de ma\xEFs doit \xEAtre la
       meilleure option."

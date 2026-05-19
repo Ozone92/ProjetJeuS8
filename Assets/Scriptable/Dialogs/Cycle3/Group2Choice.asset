@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogData
   dialogs:
   - id: Begin
-    speaker: Bum
+    speaker: Renji
     text: "Bon, on fait quoi ? J\u2019ai vraiment confiance en ma m\xE9thode, mais
       si tu veux faire autre chose je te suis."
     useDefaultCameraTransform: 0
@@ -57,7 +57,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Your
-    speaker: Rival
+    speaker: Xiao
     text: "Tu penses vraiment qu\u2019on peut lui faire confiance ?"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -82,7 +82,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Your3
-    speaker: HB
+    speaker: Vous
     text: "Faites moi confiance pour une fois, vraiment j\u2019ai eu un \xE9clair
       de g\xE9nie"
     useDefaultCameraTransform: 0
@@ -97,7 +97,7 @@ MonoBehaviour:
         amount: 1
       minimalCondition: []
   - id: Other
-    speaker: Rival
+    speaker: XIao
     text: "Ca m\u2019a l\u2019air mieux que ce que propose l\u2019autre"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -109,7 +109,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Other2
-    speaker: Bum
+    speaker: Renji
     text: "Pourtant je la sentais bien cette id\xE9e"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0

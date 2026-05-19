@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogData
   dialogs:
   - id: Begin
-    speaker: Vieux
+    speaker: Walter
     text: "Je me souviens quand coca faisait encore leurs soda avec de la coca\xEFne,
       c\u2019\xE9tait m\xE9dicale haha"
     useDefaultCameraTransform: 0
@@ -27,7 +27,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Cousin1
-    speaker: Cousin
+    speaker: Titouan
     text: "C\u2019est quoi la coca\xEFne ??"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -51,7 +51,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Cousin2
-    speaker: Cousin
+    speaker: Titouan
     text: "Sinon j\u2019adore le sprite, je fais croire \xE0 maman que c\u2019est
       de l\u2019eau gazeuse."
     useDefaultCameraTransform: 0
@@ -64,7 +64,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Vieux2
-    speaker: Vieux
+    speaker: Walter
     text: "On peut partir sur un soda transparent, tr\xE8s sucr\xE9 et go\xFBt citron."
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0

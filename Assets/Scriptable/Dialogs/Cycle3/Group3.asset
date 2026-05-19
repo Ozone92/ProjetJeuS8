@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogData
   dialogs:
   - id: Begin
-    speaker: Cousin
+    speaker: Titouan
     text: "J\u2019ai vu sur tiktok qu\u2019on pouvait mettre de l\u2019azote liquide
       avec quelques billes de gaz et que ca fait une boisson explosive !"
     useDefaultCameraTransform: 0
@@ -27,8 +27,8 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Vieux1
-    speaker: Vieux
-    text: "J\u2019aime bien l'id\xE9e, laissons sa chance \xE0 la jeunesse"
+    speaker: Walter
+    text: "J\u2019aime bien l'id\xE9e, laissons une chance \xE0 la jeunesse"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: -0.013, y: 0.171, z: 0.064}

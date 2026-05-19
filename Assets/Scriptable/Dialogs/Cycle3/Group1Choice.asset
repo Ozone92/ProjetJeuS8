@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogData
   dialogs:
   - id: Begin
-    speaker: Nerd
+    speaker: Uryu
     text: Quelle solution a tu retenu ?
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -56,7 +56,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Your
-    speaker: HB
+    speaker: Speed
     text: Donnez moi cette bouteille, je vais vous la secouer comme jamais !
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -68,7 +68,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Your2
-    speaker: Nerd
+    speaker: Uryu
     text: Et une bouteille bien froide, tiens.
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -82,7 +82,7 @@ MonoBehaviour:
         amount: 1
       minimalCondition: []
   - id: Other
-    speaker: HB
+    speaker: Speed
     text: "\xC7a a l\u2019air long et beaucoup plus complexe ton truc\u2026"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -94,7 +94,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Other2
-    speaker: Nerd
+    speaker: Uryu
     text: "Peut-\xEAtre, mais bien plus efficace que simplement la secouer."
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0

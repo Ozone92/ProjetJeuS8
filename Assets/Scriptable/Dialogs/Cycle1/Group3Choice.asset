@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogData
   dialogs:
   - id: Begin
-    speaker: Cousin
+    speaker: Titouan
     text: "Ke kon mets dans l\u2019soda ?"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -62,7 +62,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Other
-    speaker: Vieux
+    speaker: Walter
     text: "Il faut faire confiance \xE0 ces anc\xEAtres tu sais"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -74,7 +74,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Other2
-    speaker: Cousin
+    speaker: Titouan
     text: "Moi je fais confiance a mon couz, je suis sur il sait ce qu\u2019il fait"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -86,7 +86,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Your
-    speaker: Vieux
+    speaker: Walter
     text: "C\u2019est bien de nous faire confiance, c\u2019est important la confiance
       de nos jours"
     useDefaultCameraTransform: 0
@@ -99,7 +99,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Your2
-    speaker: Cousin
+    speaker: Titouan
     text: "On va tout d\xE9chirer !"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0

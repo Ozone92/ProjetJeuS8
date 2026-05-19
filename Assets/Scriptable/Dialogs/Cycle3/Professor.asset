@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogData
   dialogs:
   - id: Begin
-    speaker: Professeur
+    speaker: Professeur T
     text: Troisieme et derniere partie du TP, vous devez maintenant mettre le gaz
       dans votre boisson et bien la sceller
     useDefaultCameraTransform: 0

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogData
   dialogs:
   - id: Begin
-    speaker: HB
-    text: Enfin t'es la ! Aller, depeche toi !
+    speaker: Speed
+    text: Enfin t'es la ! Aller, depeche toi ! Ce nerd de Uryu me fatigue
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: -0.128, y: 0.171, z: 0.384}
@@ -26,7 +26,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: NerdText
-    speaker: Nerd
+    speaker: Uryu
     text: "T\u2019as int\xE9r\xEAt \xE0 \xEAtre plus s\xE9rieux pour ce tp, je veux
       une note parfaite. J'esp\xE8re au moins que tu sais comment on centrifuge une
       mol\xE9cule \xE0 ion positif"

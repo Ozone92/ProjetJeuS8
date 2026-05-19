@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogData
   dialogs:
   - id: Begin
-    speaker: Cousin
-    text: J'pense on va avoir 67 / 100 XD
+    speaker: Titouan
+    text: "Ca va cousin ? J'pense on va avoir 67 / 100 \xE0 ce TP"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
@@ -26,8 +26,8 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: VieuxText
-    speaker: Vieux
-    text: Viens avec nous, je vais prendre soin de vous
+    speaker: Walter
+    text: "Enchant\xE9 je suis Walter. Viens avec nous, je vais prendre soin de vous"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: -0.013, y: 0.171, z: 0.064}
@@ -59,7 +59,8 @@ MonoBehaviour:
       minimalCondition: []
   - id: Join
     speaker: Vous
-    text: "Pause ? Concentrons-nous plut\xF4t sur le tp."
+    text: "Il est bizarre le vieux...  Je vais le surveiller pour prot\xE9ger le
+      petit couz"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: -0.013, y: 0.171, z: 0.064}

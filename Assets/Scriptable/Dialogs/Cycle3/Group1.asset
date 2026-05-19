@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogData
   dialogs:
   - id: Begin
-    speaker: HB
+    speaker: Speed
     text: "Si on secoue tr\xE8s tr\xE8s fort, ca devrait le faire non ?"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -26,7 +26,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Nerd1
-    speaker: Nerd
+    speaker: Uryu
     text: Il faut surtout que la bouteille soit bien froide, sinon le gaz ne se fera
       pas correctement.
     useDefaultCameraTransform: 0

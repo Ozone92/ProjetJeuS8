@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogData
   dialogs:
   - id: Begin
-    speaker: Bum
+    speaker: Renji
     text: "On pourra verser la moiti\xE9 de mon coca dans notre soda, ce sera solide.
       L\u2019autre moiti\xE9 de l\u2019eau gazeuse, \xE7a suffira."
     useDefaultCameraTransform: 0
@@ -27,7 +27,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Rival1
-    speaker: Rival
+    speaker: XIao
     text: "C\u2019est quoi cette id\xE9e de salopard. Si tu veux on copie juste les
       ingr\xE9dients du coca mais on va pas utiliser ta canette ti\xE8de."
     useDefaultCameraTransform: 0
@@ -40,8 +40,8 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Bum2
-    speaker: Bum
-    text: "Je viens de l\u2019acheter au Lidl, elle est encore fra\xEEche TwT"
+    speaker: Renji
+    text: "Je viens de l\u2019acheter au Lidl, elle est encore fra\xEEche"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
@@ -53,7 +53,7 @@ MonoBehaviour:
       minimalCondition: []
   - id: Vous1
     speaker: Vous
-    text: Il a raison c important de boire frais
+    text: Il a raison c'est important de boire frais
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
@@ -66,9 +66,9 @@ MonoBehaviour:
         amount: 1
       minimalCondition: []
   - id: Rival2
-    speaker: Rival
+    speaker: Xiao
     text: "Vous me cassez les couilles, on va juste copier les ingr\xE9dients du
-      coca c bon."
+      coca et c'est tout."
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: 0.193, y: 0.171, z: 0.283}

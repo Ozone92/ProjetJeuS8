@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogData
   dialogs:
   - id: Begin
-    speaker: Bum
+    speaker: Renji
     text: Vous voulez faire quoi du coup ?
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -62,7 +62,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Other
-    speaker: Rival
+    speaker: Xiao
     text: "Tu penses vraiment que c\u2019est mieux ?"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -86,8 +86,8 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Other3
-    speaker: Rival
-    text: "Je te fais confiance, a la moindre erreur par contre\u2026"
+    speaker: Xiao
+    text: "Je te fais confiance, \xE0 la moindre erreur par contre\u2026"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
@@ -98,7 +98,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Other4
-    speaker: Bum
+    speaker: Renji
     text: "Vous avez l\u2019air de vous y connaitre, je vous laisse faire"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -112,7 +112,7 @@ MonoBehaviour:
         amount: 1
       minimalCondition: []
   - id: Your
-    speaker: Rival
+    speaker: Xiao
     text: Tu vois, je propose toujours les meilleures solutions
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -124,7 +124,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Your2
-    speaker: Bum
+    speaker: Renji
     text: "Simple, efficace et sans probl\xE8me de droit d\u2019auteur."
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0

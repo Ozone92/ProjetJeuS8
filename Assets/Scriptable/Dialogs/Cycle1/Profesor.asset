@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogData
   dialogs:
   - id: Begin
-    speaker: Professeur
+    speaker: Professeur T
     text: "C\u2019est bon les groupes sont faits vous pouvez donc commencer.A la
       fin de la s\xE9ance, vous pourrez go\xFBter vos sodas et je vous donnerai une
       note. "
@@ -28,7 +28,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Inst
-    speaker: Professeur
+    speaker: Professeur T
     text: "La premi\xE8re partie consiste \xE0 choisir le bon dosage pour les ingr\xE9dients
       qui sont les sucres ou edulcorants, les ar\xF4mes et les colorants. "
     useDefaultCameraTransform: 0

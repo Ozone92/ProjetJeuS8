@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogData
   dialogs:
   - id: Begin
-    speaker: Rival
-    text: "T\u2019as pas int\xE9r\xEAt \xE0 me mettre des b\xE2tons dans les roues
-      cette fois."
+    speaker: Xiao
+    text: "T'as pas int\xEAret \xE0 ruiner mon TP comme la derni\xE8re fois. D\xE9j\xE0
+      que je suis avec ce d\xE9bile de Renji"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
@@ -27,7 +27,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: BunText
-    speaker: Bum
+    speaker: Renji
     text: "On va pas refuser quelqu\u2019un en plus, ca me permettra de rien fai\u2026
       euh ca nous permettra d\u2019aller plus vite !"
     useDefaultCameraTransform: 0
@@ -61,7 +61,7 @@ MonoBehaviour:
       minimalCondition: []
   - id: Join
     speaker: Vous
-    text: Tkt tout va rouler comme sur des roulettes cette fois.
+    text: "T'inqui\xE8tes tout va rouler comme sur des roulettes cette fois."
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
