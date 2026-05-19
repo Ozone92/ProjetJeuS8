@@ -35,5 +35,5 @@ MonoBehaviour:
     position: {x: -0.013, y: 0.171, z: 0.064}
     rotation: {x: 0, y: 180, z: 0}
   - key: Vous
-    position: {x: 1.513, y: 0.1259, z: 1.1897}
-    rotation: {x: 0, y: 0, z: 0}
+    position: {x: 1.7812, y: 0.1512, z: 1.5735}
+    rotation: {x: 0, y: -90, z: 0}

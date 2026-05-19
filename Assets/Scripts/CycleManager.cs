@@ -18,6 +18,9 @@ public class CycleManager : MonoBehaviour
     [SerializeField]
     private BalanceMiniGameManager BalanceGameManagerPrefab;
 
+    [SerializeField] 
+    private GameObject backgroundClassMusic;
+
     private IEnumerator DoCleaningGame()
     {
         MiniJeuManager miniJeuManager =  Instantiate<MiniJeuManager>(CleaningGameManagerPrefab);
@@ -74,14 +77,22 @@ public class CycleManager : MonoBehaviour
             yield return new WaitUntil(() => playerStats.Get("CycleFinish" + CurrentCycle) != 0f);
             yield return new WaitUntil(() => !DialogData.InDialog);
 
+            string gameToLaunch = "";
             switch (CurrentCycle)
             {
                 case 2:
-                    yield return DoCleaningGame();
+                    gameToLaunch = "DoCleaningGame";
                     break;
                 case 3:
-                    yield return DoBalanceGame();
+                    gameToLaunch = "DoBalanceGame";
                     break;
+            }
+
+            if (gameToLaunch != "")
+            {
+                backgroundClassMusic.SetActive(false);
+                yield return StartCoroutine(gameToLaunch);
+                backgroundClassMusic.SetActive(true);
             }
 
             Debug.Log("New Cycle");
