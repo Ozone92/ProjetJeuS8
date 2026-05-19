@@ -9,8 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
+    path: Assets/Scenes/WelcomeMenu.unity
+    guid: ae24801821f369646b37f02ea6ede9b1
+  - enabled: 1
     path: Assets/Scenes/RoomScene.unity
     guid: 976502537808f2d4497867e95b4c19f8
+  - enabled: 1
+    path: Assets/Scenes/Salle de classe.unity
+    guid: 952f72e76cb02684b81ba1e5baf3dfd5
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -22,7 +22,6 @@ public class MainMenu : MonoBehaviour
         {
             SceneManager.LoadScene(Loader.SceneNames.RoomScene.ToString());
         });
-        
         QuitButton.onClick.AddListener(() =>
         {
             Application.Quit();
