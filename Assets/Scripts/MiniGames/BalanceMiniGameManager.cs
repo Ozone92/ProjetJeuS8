@@ -363,8 +363,42 @@ public class BalanceMiniGameManager : MonoBehaviour
 
     private GameObject CreateStartButton(Transform parent)
     {
+        GameObject startScreenObject = new GameObject("StartScreen", typeof(RectTransform));
+        startScreenObject.transform.SetParent(parent, false);
+        RectTransform startScreenRect = startScreenObject.GetComponent<RectTransform>();
+        startScreenRect.anchorMin = Vector2.zero;
+        startScreenRect.anchorMax = Vector2.one;
+        startScreenRect.offsetMin = Vector2.zero;
+        startScreenRect.offsetMax = Vector2.zero;
+
+        GameObject instructionPanel = new GameObject("StartInstructionsPanel", typeof(RectTransform), typeof(CanvasRenderer), typeof(Image));
+        instructionPanel.transform.SetParent(startScreenObject.transform, false);
+        RectTransform panelRect = instructionPanel.GetComponent<RectTransform>();
+        panelRect.anchorMin = new Vector2(0.5f, 0.5f);
+        panelRect.anchorMax = new Vector2(0.5f, 0.5f);
+        panelRect.pivot = new Vector2(0.5f, 0.5f);
+        panelRect.anchoredPosition = new Vector2(0f, 170f);
+        panelRect.sizeDelta = new Vector2(1040f, 170f);
+
+        Image panelImage = instructionPanel.GetComponent<Image>();
+        panelImage.color = new Color(0f, 0f, 0f, 0.65f);
+
+        GameObject instructionObject = new GameObject("StartInstructions", typeof(RectTransform), typeof(CanvasRenderer), typeof(TextMeshProUGUI));
+        instructionObject.transform.SetParent(instructionPanel.transform, false);
+        RectTransform instructionRect = instructionObject.GetComponent<RectTransform>();
+        instructionRect.anchorMin = Vector2.zero;
+        instructionRect.anchorMax = Vector2.one;
+        instructionRect.offsetMin = new Vector2(28f, 18f);
+        instructionRect.offsetMax = new Vector2(-28f, -18f);
+
+        TextMeshProUGUI instructions = instructionObject.GetComponent<TextMeshProUGUI>();
+        instructions.text = "Gardez les deux barres dans la zone verte.\nA/D controle la barre de gauche, <- et -> controle la barre de droite.";
+        instructions.fontSize = 34f;
+        instructions.color = Color.white;
+        instructions.alignment = TextAlignmentOptions.Center;
+
         GameObject buttonObject = new GameObject("StartButton", typeof(RectTransform), typeof(CanvasRenderer), typeof(Image), typeof(Button));
-        buttonObject.transform.SetParent(parent, false);
+        buttonObject.transform.SetParent(startScreenObject.transform, false);
 
         RectTransform buttonRect = buttonObject.GetComponent<RectTransform>();
         buttonRect.anchorMin = new Vector2(0.5f, 0f);
@@ -388,12 +422,12 @@ public class BalanceMiniGameManager : MonoBehaviour
         labelRect.offsetMax = Vector2.zero;
 
         TextMeshProUGUI label = labelObject.GetComponent<TextMeshProUGUI>();
-        label.text = "Maintenez A/D pour garder la barre de gauche a l'equilibre et <- et -> pour la barre de droite.\nSTART";
-        label.fontSize = 30f;
+        label.text = "START";
+        label.fontSize = 34f;
         label.color = Color.black;
         label.alignment = TextAlignmentOptions.Center;
 
-        return buttonObject;
+        return startScreenObject;
     }
 
     private void ApplyUnstableScorePenalty()
