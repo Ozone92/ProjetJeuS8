@@ -54,6 +54,8 @@ MonoBehaviour:
         amount: 1
       - name: CycleFinish0
         amount: 1
+      - name: GroupScore
+        amount: 50
       minimalCondition: []
     - text: Non
       idToGo: 

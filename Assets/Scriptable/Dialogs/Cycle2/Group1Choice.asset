@@ -98,17 +98,17 @@ MonoBehaviour:
       idToGo: HB_Vous1
       statsToChange:
       - name: GroupScore
-        amount: 1
+        amount: 17
       - name: TpScore
-        amount: -1
+        amount: 15
       minimalCondition: []
     - text: Uryu
       idToGo: Nerd_Vous1
       statsToChange:
       - name: GroupScore
-        amount: -1
+        amount: -25
       - name: TpScore
-        amount: 1
+        amount: 34
       minimalCondition: []
     - text: Vous
       idToGo: Vous_Vous1

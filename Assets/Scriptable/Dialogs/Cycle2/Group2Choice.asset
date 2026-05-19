@@ -112,17 +112,17 @@ MonoBehaviour:
       idToGo: Bum_Vous1
       statsToChange:
       - name: GroupScore
-        amount: 0
+        amount: 17
       - name: TpScore
-        amount: -1
+        amount: 17
       minimalCondition: []
     - text: Rival
       idToGo: Rival_Vous1
       statsToChange:
       - name: GroupScore
-        amount: -1
+        amount: -30
       - name: TpScore
-        amount: 1
+        amount: 25
       minimalCondition: []
     - text: Vous
       idToGo: Vous_Vous1
