@@ -28,6 +28,32 @@ MonoBehaviour:
       minimalCondition: []
   - id: Prof2
     speaker: Professeur
+    text: "Il sera d\xE9coup\xE9 en trois parties. Tout d'abord vous devrez choisir
+      vos ingr\xE9dients, ensuite nettoyer votre paillasse, puis ajouter le gaz."
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
+    cameraPosition: {x: 0.065, y: 0.171, z: -0.235}
+    cameraRotation: {x: 0, y: 0, z: 0}
+    choices:
+    - text: 
+      idToGo: Prof3
+      statsToChange: []
+      minimalCondition: []
+  - id: Prof3
+    speaker: Professeur
+    text: "Pour la notation, la r\xE9ussite du TP sera tout aussi impostante que
+      la bonne entente dans le groupe !"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
+    cameraPosition: {x: 0.065, y: 0.171, z: -0.235}
+    cameraRotation: {x: 0, y: 0, z: 0}
+    choices:
+    - text: 
+      idToGo: Prof4
+      statsToChange: []
+      minimalCondition: []
+  - id: Prof4
+    speaker: Professeur
     text: "Les groupes sont presque form\xE9s. Choisissez un duo et rejoins-les."
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
