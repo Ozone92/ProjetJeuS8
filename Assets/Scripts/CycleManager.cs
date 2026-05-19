@@ -28,13 +28,21 @@ public class CycleManager : MonoBehaviour
         int score = miniJeuManager.Score;
 
         int toAdd = 0;
-        if (score < 5)
+        if (score < 20)
         {
-            toAdd = -1;
+            toAdd = -15;
         }
-        else if (score > 15)
+        else if (score < 25)
         {
-            toAdd = 1;
+            toAdd = -10;
+        }
+        else if (score >= 60)
+        {
+            toAdd = 17;
+        }
+        else
+        {
+            toAdd = score / 5;
         }
         
         if (playerStats.Get("DoMinigame2") != 0f)
@@ -42,7 +50,7 @@ public class CycleManager : MonoBehaviour
             toAdd *= 2;
         }
                 
-        playerStats.Add("GroupScore", toAdd);
+        playerStats.Add("GroupScore", toAdd/2);
         playerStats.Add("TpScore", toAdd);
         
         yield return new WaitForSecondsRealtime(2f);
@@ -56,12 +64,15 @@ public class CycleManager : MonoBehaviour
 
         int toAdd = balanceMiniGameManager.score switch
         {
-            >= 80 => 2,
-            >= 50 => 1,
-            _ => 0
+            >= 90 => 17,
+            >= 80 => 12,
+            >= 70 => 9,
+            >= 60 => 5,
+            >= 50 => 3,
+            _ => -15
         };
 
-        playerStats.Add("GroupScore", toAdd);
+        playerStats.Add("GroupScore", toAdd/2);
         playerStats.Add("TpScore", toAdd);
         
         yield return new WaitForSecondsRealtime(2f);
