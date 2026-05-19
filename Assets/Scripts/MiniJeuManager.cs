@@ -1,6 +1,6 @@
 using UnityEngine;
 using TMPro;
-using System.Collections; 
+using System.Collections;
 
 public class MiniJeuManager : MonoBehaviour
 {
@@ -9,34 +9,39 @@ public class MiniJeuManager : MonoBehaviour
     [Header("Interface UI")]
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI timerText;
-    public GameObject ecranDemarrage; 
+    public GameObject ecranDemarrage;
+    public GameObject texteExplication;
 
     [Header("Paramètres du Jeu")]
-    public GameObject prefabTache; 
-    public RectTransform zoneDeSpawn; 
+    public GameObject prefabTache;
+    public RectTransform zoneDeSpawn;
     public int nombreDeTachesSimultanees = 4;
-    
+
     [Header("Audio")]
     public AudioSource sourceSFX; // Le haut-parleur pour les bruitages
     public AudioClip sonNettoyage; // Le fichier son à jouer
-    
+
     public int Score { get; private set; }
     public bool JeuTermine { get; private set; }
-    
-    private float tempsRestant = 20f; 
-    private bool jeuEnCours = false; 
+
+    private float tempsRestant = 20f;
+    private bool jeuEnCours = false;
     private bool jeuTermine = false;
 
     private void Awake()
     {
-        Instance = this; 
+        Instance = this;
     }
 
     private void Start()
     {
         scoreText.text = "Score : 0";
         timerText.text = "Prêt ?";
-        ecranDemarrage.SetActive(true); 
+        ecranDemarrage.SetActive(true);
+        if (texteExplication != null)
+        {
+            texteExplication.SetActive(true);
+        }
     }
 
     public void DemarrerJeu()
@@ -46,10 +51,14 @@ public class MiniJeuManager : MonoBehaviour
 
     IEnumerator SequenceDeDemarrage()
     {
-        ecranDemarrage.SetActive(false); 
+        ecranDemarrage.SetActive(false);
+        if (texteExplication != null)
+        {
+            texteExplication.SetActive(false);
+        }
 
         timerText.text = "3";
-        yield return new WaitForSeconds(1f); 
+        yield return new WaitForSeconds(1f);
 
         timerText.text = "2";
         yield return new WaitForSeconds(1f);
@@ -58,15 +67,15 @@ public class MiniJeuManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         timerText.text = "GO !";
-        yield return new WaitForSeconds(0.5f); 
-        
+        yield return new WaitForSeconds(0.5f);
+
         LancerPartie();
     }
 
     private void LancerPartie()
     {
         jeuEnCours = true;
-        
+
         for (int i = 0; i < nombreDeTachesSimultanees; i++)
         {
             FaireApparaitreTache();
@@ -102,10 +111,10 @@ public class MiniJeuManager : MonoBehaviour
     public void AjouterScore(int points)
     {
         if (!jeuEnCours || jeuTermine) return;
-        
+
         Score += points;
         scoreText.text = "Score : " + Score.ToString();
-        
+
         // Joue le bruitage de nettoyage à chaque point marqué
         if (sourceSFX != null && sonNettoyage != null)
         {
@@ -120,7 +129,7 @@ public class MiniJeuManager : MonoBehaviour
         JeuTermine = true;
         tempsRestant = 0;
         timerText.text = "Terminé !";
-        
+
         foreach (Transform child in zoneDeSpawn) {
             Destroy(child.gameObject);
         }
