@@ -12,7 +12,7 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField] private Button PlayButton;
     [SerializeField] private Button QuitButton;
-    
+    [SerializeField] private PlayerStats stats;
     
     
 
@@ -20,6 +20,7 @@ public class MainMenu : MonoBehaviour
     {
         PlayButton.onClick.AddListener(() =>
         {
+            stats.Reset();
             SceneManager.LoadScene(Loader.SceneNames.RoomScene.ToString());
         });
         QuitButton.onClick.AddListener(() =>

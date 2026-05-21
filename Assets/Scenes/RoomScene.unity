@@ -754,6 +754,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1967277671173508063, guid: a6e75246d45a39f068a1c04af3b2ddfe, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295725844165918164, guid: a6e75246d45a39f068a1c04af3b2ddfe, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5408051055151993141, guid: a6e75246d45a39f068a1c04af3b2ddfe, type: 3}
       propertyPath: m_UseGravity
       value: 0
