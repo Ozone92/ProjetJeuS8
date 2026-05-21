@@ -23,7 +23,9 @@ MonoBehaviour:
     choices:
     - text: 
       idToGo: HB1
-      statsToChange: []
+      statsToChange:
+      - name: speed_phone
+        amount: 1
       minimalCondition: []
   - id: HB1
     speaker: Speed
