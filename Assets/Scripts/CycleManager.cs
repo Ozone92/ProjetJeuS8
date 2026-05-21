@@ -37,16 +37,16 @@ public class CycleManager : MonoBehaviour
     {
         new EndingData { statKey = "G1_snap", message = "D'un claquement de doigts, la moitié des élèves de la classe furent exterminés par Professeur T" },
         new EndingData { statKey = "G1_amuse", message = "Si seulement Uryu savait que j'avais fait exprès de rater ce TP pour maintenir ma moyenne à un 10 parfait" },
-        new EndingData { statKey = "G1_learn", message = "on a appris" },
-        new EndingData { statKey = "G1_wnerd", message = "uryu le goat" },
+        new EndingData { statKey = "G1_learn", message = "Bon, je suppose que je sais faire des sodas maintenant..." },
+        new EndingData { statKey = "G1_wnerd", message = "W Speed ahh ending" },
         new EndingData { statKey = "G2_snap", message = "D'un claquement de doigts, la moitié des élèves de la classe furent exterminés par Professeur T" },
-        new EndingData { statKey = "G2_decu", message = "Fin 6" },
-        new EndingData { statKey = "G2_passion", message = "Fin 7" },
-        new EndingData { statKey = "G2_wxiao", message = "Fin 8" },
+        new EndingData { statKey = "G2_decu", message = "Et ainsi se finit ce TP de chimie avec Xiao et Renji, laissant un arrière-goût amer dans ma bouche" },
+        new EndingData { statKey = "G2_passion", message = "Malgré ce TP quelque peu imparfait, je repartis avec une bonne note et de nouvelles amitiés" },
+        new EndingData { statKey = "G2_wxiao", message = "Je suis content d'avoir pu me racheter auprès de Xiao, sans avoir eu besoin de manipuler mes camarades" },
         new EndingData { statKey = "G3_snap", message = "D'un claquement de doigts, la moitié des élèves de la classe furent exterminés par Professeur T" },
-        new EndingData { statKey = "G3_decu", message = "Fin 10" },
-        new EndingData { statKey = "G3_larp", message = "Fin 11" },
-        new EndingData { statKey = "G3_cook", message = "Fin 12" }
+        new EndingData { statKey = "G3_decu", message = "C'était plus fun que prévu. Mais je pense que ce Walter nous cache ses vraies capacités..." },
+        new EndingData { statKey = "G3_larp", message = "Ce professeur qui larp à chaque cours n'est qu'un autre de mes points pour me hisser au sommet de ce lycée" },
+        new EndingData { statKey = "G3_cook", message = "WE COOKED" }
     };
 
     public int CurrentCycle { get; private set; } = 0;
@@ -137,6 +137,10 @@ public class CycleManager : MonoBehaviour
         yield return new WaitUntil(() => playerStats.Get("speed_phone") != 0f);
 
         image_speed.gameObject.SetActive(true);
+        
+        yield return new WaitForSeconds(2f);
+
+        image_speed.gameObject.SetActive(false);
     }
     private IEnumerator ShowEndScreen(string message)
     {
