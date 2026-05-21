@@ -15,8 +15,8 @@ MonoBehaviour:
   dialogs:
   - id: Begin
     speaker: Professeur T
-    text: Troisieme et derniere partie du TP, vous devez maintenant mettre le gaz
-      dans votre boisson et bien la sceller
+    text: "Troisi\xE8me et derni\xE8re partie du TP, vous devez maintenant mettre
+      le gaz dans votre boisson et bien refermer la bouteille"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: 0.065, y: 0.171, z: -0.235}

@@ -16,7 +16,7 @@ MonoBehaviour:
   - id: Begin
     speaker: Titouan
     text: "J\u2019ai vu sur tiktok qu\u2019on pouvait mettre de l\u2019azote liquide
-      avec quelques billes de gaz et que ca fait une boisson explosive !"
+      avec quelques billes de gaz pour cr\xE9er une boisson explosive"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
@@ -28,7 +28,7 @@ MonoBehaviour:
       minimalCondition: []
   - id: Vieux1
     speaker: Walter
-    text: "J\u2019aime bien l'id\xE9e, laissons une chance \xE0 la jeunesse"
+    text: "Il est dangereux ton cousin j'aime bien il me le faut dans mon \xE9quipe"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: -0.013, y: 0.171, z: 0.064}

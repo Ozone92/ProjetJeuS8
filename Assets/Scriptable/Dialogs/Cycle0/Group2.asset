@@ -29,7 +29,7 @@ MonoBehaviour:
   - id: BunText
     speaker: Renji
     text: "On va pas refuser quelqu\u2019un en plus, ca me permettra de rien fai\u2026
-      euh ca nous permettra d\u2019aller plus vite !"
+      euh d\u2019aller plus vite !"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
@@ -41,7 +41,7 @@ MonoBehaviour:
       minimalCondition: []
   - id: Choix
     speaker: Vous
-    text: Est-ce que je rejoins ce groupe ?
+    text: 'Rejoindre ce groupe ? '
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: 0.32, y: 0.17, z: 0.3}

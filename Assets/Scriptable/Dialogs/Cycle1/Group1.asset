@@ -15,8 +15,8 @@ MonoBehaviour:
   dialogs:
   - id: Begin
     speaker: Speed
-    text: On peut faire comme les sodas existant. De ce que je vois sur ma canette,
-      il y a beaucoup de tout
+    text: "On pourrait s'inspirer de sodas d\xE9j\xE0 existants, mais \xE7a m'a lair
+      tr\xE8s chimique"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: -0.128, y: 0.171, z: 0.283}
@@ -28,8 +28,8 @@ MonoBehaviour:
       minimalCondition: []
   - id: nerdSain
     speaker: Uryu
-    text: Si on veut quelque chose de plus sain, il faudrait mettre des sucres et
-      colorants naturels.
+    text: En effet, si on veut quelque chose de plus sain, il faudrait mettre des
+      sucres et colorants naturels.
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: -0.032, y: 0.171, z: 0.384}
@@ -41,7 +41,7 @@ MonoBehaviour:
       minimalCondition: []
   - id: hbOlive
     speaker: Speed
-    text: "OK.J\u2019ai vu des colorants naturels vert olive."
+    text: J'aimerais bien faire un soda vert.
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: -0.128, y: 0.171, z: 0.283}
@@ -53,7 +53,7 @@ MonoBehaviour:
       minimalCondition: []
   - id: playerOlive
     speaker: Vous
-    text: Vert olive MDRR
+    text: "Vers o\xF9 ? LOL"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: -0.128, y: 0.171, z: 0.384}
@@ -67,9 +67,8 @@ MonoBehaviour:
       minimalCondition: []
   - id: nerdNaturel
     speaker: Uryu
-    text: "Un peu de s\xE9rieux, go partir sur une ar\xF4me menthe avec des colorants
-      naturels menthe aussi. Pour les sucres, le sirop de ma\xEFs doit \xEAtre la
-      meilleure option."
+    text: "Arr\xEAtons les blagues, partons sur une ar\xF4me et un colorant menthe.
+      Pour les sucres, le sirop de ma\xEFs devrait faire l'affaire."
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: -0.032, y: 0.1556, z: 0.5145}

@@ -15,7 +15,7 @@ MonoBehaviour:
   dialogs:
   - id: Begin
     speaker: Vous
-    text: Ils semblent etre en train de preparer le materiel pour nettoyer.
+    text: "Ils semblent \xEAtre en train de pr\xE9parer le mat\xE9riel pour nettoyer."
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 1
     cameraPosition: {x: 0.0761, y: 0.3138, z: 0.5427}

@@ -42,7 +42,7 @@ MonoBehaviour:
       minimalCondition: []
   - id: Rival1
     speaker: Xiao
-    text: "Ca m'\xE9tonnerait, tu comprends jamais les consignes"
+    text: Depuis quand tu sais lire toi ?
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: 0.193, y: 0.171, z: 0.283}

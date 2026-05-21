@@ -41,7 +41,7 @@ MonoBehaviour:
       minimalCondition: []
   - id: Choix
     speaker: Vous
-    text: Est-ce que je rejoins ce groupe ?
+    text: 'Rejoindre ce groupe ? '
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: -0.032, y: 0.1556, z: 0.5145}

@@ -27,8 +27,8 @@ MonoBehaviour:
       minimalCondition: []
   - id: Prof2
     speaker: Professeur T
-    text: "Comme dit au d\xE9but de la s\xE9ance, vous \xEAtes not\xE9s sur la r\xE9ussite
-      technique de votre soda mais aussi sur la vibe que vous aviez en travaillant."
+    text: "Comme je vous avait dit au d\xE9but de la s\xE9ance, vous \xEAtes not\xE9s
+      sur votre technique mais aussi sur votre ambiance de groupe."
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: 0, y: 0, z: 0}
@@ -53,7 +53,7 @@ MonoBehaviour:
       minimalCondition: []
   - id: Prof4
     speaker: Professeur T
-    text: Bon assez parler on va commencer par le groupe de 3 personnes.
+    text: "Bon assez parl\xE9 on va commencer par le groupe de 3 personnes."
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: 0, y: 0, z: 0}
@@ -89,7 +89,7 @@ MonoBehaviour:
       minimalCondition: []
   - id: Prof7
     speaker: Professeur T
-    text: '*nous regarde dans les yeux*'
+    text: '*Fixe votre groupe d''un regard intense*'
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: 0, y: 0, z: 0}
