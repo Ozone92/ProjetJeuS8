@@ -83,7 +83,7 @@ MonoBehaviour:
     cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
-    - text: Cousin
+    - text: Titouan
       idToGo: Cousin_Vous1
       statsToChange:
       - name: GroupScore
@@ -91,7 +91,7 @@ MonoBehaviour:
       - name: TpScore
         amount: 10
       minimalCondition: []
-    - text: Vieux
+    - text: Walter
       idToGo: Vieux_Vous1
       statsToChange:
       - name: GroupScore

@@ -108,7 +108,7 @@ MonoBehaviour:
     cameraPosition: {x: 0.193, y: 0.171, z: 0.283}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
-    - text: Bum
+    - text: Renji
       idToGo: Bum_Vous1
       statsToChange:
       - name: GroupScore
@@ -116,7 +116,7 @@ MonoBehaviour:
       - name: TpScore
         amount: 17
       minimalCondition: []
-    - text: Rival
+    - text: Xiao
       idToGo: Rival_Vous1
       statsToChange:
       - name: GroupScore
