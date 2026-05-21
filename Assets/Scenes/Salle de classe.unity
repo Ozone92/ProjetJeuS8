@@ -3602,6 +3602,20 @@ MonoBehaviour:
   CleaningGameManagerPrefab: {fileID: 439859894723535506, guid: b11d0fab82eff5af19f1490c77699221, type: 3}
   BalanceGameManagerPrefab: {fileID: 3691219398680585968, guid: ea6ca6af6e6047119a46cbff7635f95e, type: 3}
   backgroundClassMusic: {fileID: 1084577929}
+  endingDialogBeginning: {fileID: 11400000, guid: ba3857fb66baaa8c48b06fd845304f42, type: 2}
+  endingDialogs:
+  - goodTpGoodGroup: {fileID: 11400000, guid: 4ebcb6d7fff4503169b9c8c523329cda, type: 2}
+    goodTpBadGroup: {fileID: 11400000, guid: cfa367e2dd52c8dd58ee2c444ab1980c, type: 2}
+    badTpGoodGroup: {fileID: 11400000, guid: 7fe30ee84001ffeee952c5c8a2a0dd22, type: 2}
+    badTpBadGroup: {fileID: 11400000, guid: 6cdc86d0807762db78190dce1386f28b, type: 2}
+  - goodTpGoodGroup: {fileID: 11400000, guid: a3ff5dc8dec4ab5c8a000af3fe09fbe4, type: 2}
+    goodTpBadGroup: {fileID: 11400000, guid: c828d22e3b17a671685f90584dfdf39d, type: 2}
+    badTpGoodGroup: {fileID: 11400000, guid: 22b2f06b4179f44eabb8bc6b9fb90e8f, type: 2}
+    badTpBadGroup: {fileID: 11400000, guid: 06257bd01390e2421aee19fe909e8d61, type: 2}
+  - goodTpGoodGroup: {fileID: 11400000, guid: 480b99cc4e02e1440ba6b9fee6f88031, type: 2}
+    goodTpBadGroup: {fileID: 11400000, guid: 775bfd428cf9f3725a42e7cf72ef4bbf, type: 2}
+    badTpGoodGroup: {fileID: 11400000, guid: 7933dbc340034a79bb7d352bd6033db2, type: 2}
+    badTpBadGroup: {fileID: 11400000, guid: eff2075c61a2e5d2ca12280e1e9986e1, type: 2}
 --- !u!4 &1951377955
 Transform:
   m_ObjectHideFlags: 0
