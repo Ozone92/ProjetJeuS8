@@ -16,8 +16,7 @@ MonoBehaviour:
   - id: Begin
     speaker: Professeur T
     text: "C\u2019est bon les groupes sont faits vous pouvez donc commencer.A la
-      fin de la s\xE9ance, vous pourrez go\xFBter vos sodas et je vous donnerai une
-      note. "
+      fin de la s\xE9ance, je gouterai vos sodas et je vous donnerai une note. "
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: 0.065, y: 0.171, z: -0.235}

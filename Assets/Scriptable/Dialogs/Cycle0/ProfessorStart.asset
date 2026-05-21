@@ -15,8 +15,8 @@ MonoBehaviour:
   dialogs:
   - id: Begin
     speaker: Professeur T
-    text: "Je recommence pour les retardataires. L\u2019objectif de ce TP est de
-      faire un soda. "
+    text: "Je recommence pour le retardataire. L\u2019objectif de ce TP est de faire
+      un soda. "
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: 0.065, y: 0.171, z: -0.235}
@@ -41,8 +41,21 @@ MonoBehaviour:
       minimalCondition: []
   - id: Prof3
     speaker: Professeur
-    text: "Pour la notation, la r\xE9ussite du TP sera tout aussi impostante que
-      la bonne entente dans le groupe !"
+    text: "Pour la notation, la bonne entente dans le groupe sera tout aussi importante
+      que la r\xE9ussite technique du TP !"
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
+    cameraPosition: {x: 0.065, y: 0.171, z: -0.235}
+    cameraRotation: {x: 0, y: 0, z: 0}
+    choices:
+    - text: 
+      idToGo: ProfExpliqueBulle
+      statsToChange: []
+      minimalCondition: []
+  - id: ProfExpliqueBulle
+    speaker: Professeur
+    text: "Vous serez not\xE9s sur votre capacit\xE9 \xE0 r\xE9ussir ce TP et sur
+      votre coh\xE9sion de groupe. Chacune de vos actions influe sur les scores"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: 0.065, y: 0.171, z: -0.235}
@@ -52,18 +65,10 @@ MonoBehaviour:
       idToGo: Prof4
       statsToChange: []
       minimalCondition: []
-  - id: ProfExpliqueBulle
-    speaker: Professeur
-    text: "Vous serez not\xE9s sur 100 sur votre capacit\xE9 \xE0 r\xE9ussir ce TP
-      et sur votre coh\xE9sion de groupe. Chacune de vos actions influe sur les scores"
-    useDefaultCameraTransform: 0
-    useSpecificCameraTransform: 0
-    cameraPosition: {x: 0.065, y: 0.171, z: -0.235}
-    cameraRotation: {x: 0, y: 0, z: 0}
-    choices: []
   - id: Prof4
     speaker: Professeur
-    text: "Les groupes sont presque form\xE9s. Choisissez un duo et rejoins-les."
+    text: "Les groupes sont presque form\xE9s. Choisis un duo et rejoins-les. Vous
+      serez un groupe de 3."
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: 0.065, y: 0.171, z: -0.235}
