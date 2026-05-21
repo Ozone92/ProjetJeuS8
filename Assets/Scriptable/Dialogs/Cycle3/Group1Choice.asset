@@ -25,9 +25,9 @@ MonoBehaviour:
       idToGo: Your
       statsToChange:
       - name: GroupScore
-        amount: 17
+        amount: 14
       - name: TpScore
-        amount: 15
+        amount: 10
       minimalCondition:
       - name: C3G1
         amount: 1
@@ -37,7 +37,7 @@ MonoBehaviour:
       - name: GroupScore
         amount: -10
       - name: TpScore
-        amount: 34
+        amount: 20
       minimalCondition:
       - name: C3G2
         amount: 1

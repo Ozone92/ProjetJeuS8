@@ -100,7 +100,7 @@ MonoBehaviour:
       - name: GroupScore
         amount: 17
       - name: TpScore
-        amount: 15
+        amount: 13
       minimalCondition: []
     - text: Uryu
       idToGo: Nerd_Vous1
@@ -108,7 +108,7 @@ MonoBehaviour:
       - name: GroupScore
         amount: -25
       - name: TpScore
-        amount: 34
+        amount: 21
       minimalCondition: []
     - text: Vous
       idToGo: Vous_Vous1

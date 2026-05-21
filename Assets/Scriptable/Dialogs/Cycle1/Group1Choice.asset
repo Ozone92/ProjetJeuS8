@@ -25,9 +25,9 @@ MonoBehaviour:
       idToGo: Your
       statsToChange:
       - name: GroupScore
-        amount: 17
+        amount: 12
       - name: TpScore
-        amount: 33
+        amount: 20
       - name: CycleFinish1
         amount: 1
       minimalCondition:

@@ -87,7 +87,7 @@ MonoBehaviour:
       idToGo: Cousin_Vous1
       statsToChange:
       - name: GroupScore
-        amount: 34
+        amount: 17
       - name: TpScore
         amount: 10
       minimalCondition: []
@@ -95,9 +95,9 @@ MonoBehaviour:
       idToGo: Vieux_Vous1
       statsToChange:
       - name: GroupScore
-        amount: 25
+        amount: 17
       - name: TpScore
-        amount: 25
+        amount: 20
       minimalCondition: []
     - text: Vous
       idToGo: Vous_Vous1
