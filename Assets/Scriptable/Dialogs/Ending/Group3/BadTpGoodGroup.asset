@@ -51,7 +51,8 @@ MonoBehaviour:
       minimalCondition: []
   - id: Vous1
     speaker: Vous
-    text: "Bon au moins on s\u2019est bien amus\xE9 c\u2019est le plus important."
+    text: "Bon au moins on s\u2019est bien amus\xE9 c\u2019est le plus important.
+      *en plus j'ai prot\xE9g\xE9 le couz du vieux bizarre*"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: 0, y: 0, z: 0}
@@ -59,7 +60,9 @@ MonoBehaviour:
     choices:
     - text: 
       idToGo: Vieux2
-      statsToChange: []
+      statsToChange:
+      - name: G3_decu
+        amount: 1
       minimalCondition: []
   - id: Vieux2
     speaker: Walter

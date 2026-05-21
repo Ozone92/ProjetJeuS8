@@ -60,7 +60,9 @@ MonoBehaviour:
     choices:
     - text: 
       idToGo: HB1
-      statsToChange: []
+      statsToChange:
+      - name: G1_wnerd
+        amount: 0
       minimalCondition: []
   - id: HB1
     speaker: Speed

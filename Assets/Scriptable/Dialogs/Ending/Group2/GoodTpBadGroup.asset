@@ -60,7 +60,9 @@ MonoBehaviour:
     choices:
     - text: 
       idToGo: Rival1
-      statsToChange: []
+      statsToChange:
+      - name: G2_passion
+        amount: 1
       minimalCondition: []
   - id: Rival1
     speaker: Xiao

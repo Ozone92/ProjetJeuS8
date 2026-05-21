@@ -60,7 +60,9 @@ MonoBehaviour:
     choices:
     - text: 
       idToGo: Vieux2
-      statsToChange: []
+      statsToChange:
+      - name: G3_cook
+        amount: 1
       minimalCondition: []
   - id: Vieux2
     speaker: Walter

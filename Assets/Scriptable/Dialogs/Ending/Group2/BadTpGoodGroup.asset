@@ -27,7 +27,7 @@ MonoBehaviour:
       minimalCondition: []
   - id: Bum1
     speaker: Renji
-    text: "C\u2019est vrai qu\u2019on est sympa."
+    text: "C\u2019est vrai qu\u2019on est sympas malgr\xE9 notre condition de primate"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: 0, y: 0, z: 0}
@@ -51,7 +51,7 @@ MonoBehaviour:
       minimalCondition: []
   - id: Vous1
     speaker: Vous
-    text: "Bon d\xE9sol\xE9 la note est moyenne finalement"
+    text: "D\xE9sol\xE9 de na pas avoir pu me racheter XIao"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: 0, y: 0, z: 0}
@@ -59,7 +59,9 @@ MonoBehaviour:
     choices:
     - text: 
       idToGo: Rival2
-      statsToChange: []
+      statsToChange:
+      - name: G2_decu
+        amount: 1
       minimalCondition: []
   - id: Rival2
     speaker: Xiao

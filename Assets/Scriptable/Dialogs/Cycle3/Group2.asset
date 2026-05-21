@@ -15,8 +15,8 @@ MonoBehaviour:
   dialogs:
   - id: Begin
     speaker: Xiao
-    text: "J\u2019ai check le sujet, \xE7a parle de la Loi de Henry mais je n\u2019arrive
-      pas \xE0 bien la comprendre"
+    text: "J\u2019ai regard\xE9 le sujet, \xE7a parle de la Loi de Henry mais je
+      n\u2019arrive pas \xE0 bien la comprendre"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: 0.193, y: 0.171, z: 0.283}

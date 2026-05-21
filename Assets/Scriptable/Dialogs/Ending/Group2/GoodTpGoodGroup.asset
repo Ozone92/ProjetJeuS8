@@ -28,7 +28,7 @@ MonoBehaviour:
       minimalCondition: []
   - id: Bum1
     speaker: Renji
-    text: GG EZ
+    text: "On est une \xE9quipe Thanos tier enft"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: 0, y: 0, z: 0}
@@ -52,7 +52,7 @@ MonoBehaviour:
       minimalCondition: []
   - id: Vous1
     speaker: Vous
-    text: "roh come on, c\u2019est derri\xE8re nous maintenant non ?"
+    text: "C\u2019est derri\xE8re nous maintenant tout \xE7a"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: 0, y: 0, z: 0}
@@ -60,7 +60,9 @@ MonoBehaviour:
     choices:
     - text: 
       idToGo: Rival2
-      statsToChange: []
+      statsToChange:
+      - name: G2_wxiao
+        amount: 1
       minimalCondition: []
   - id: Rival2
     speaker: Xiao

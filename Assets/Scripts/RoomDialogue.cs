@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using TMPro;
 
 public class RoomDialogue : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class RoomDialogue : MonoBehaviour
     [SerializeField] private Button BackToMenuButton;
     [SerializeField] private Canvas rendormiCanvas;
     [SerializeField] private CanvasGroup rendormiCanvasGroup;
+    [SerializeField] private TMP_Text endText;
     [SerializeField] private float fadeDuration = 5f;
     [SerializeField] private DialogData cycle0Dialog;
     [SerializeField] private PlayerStats playerStats;

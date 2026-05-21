@@ -15,8 +15,8 @@ MonoBehaviour:
   dialogs:
   - id: Begin
     speaker: Renji
-    text: "On pourra verser la moiti\xE9 de mon coca dans notre soda, ce sera solide.
-      L\u2019autre moiti\xE9 de l\u2019eau gazeuse, \xE7a suffira."
+    text: "On pourra verser la moiti\xE9 de mon coca dans notre soda. L\u2019autre
+      moiti\xE9 de l\u2019eau gazeuse, \xE7a suffira."
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: 0.32, y: 0.17, z: 0.3}
