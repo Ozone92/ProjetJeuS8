@@ -1,9 +1,19 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CycleManager : MonoBehaviour
 {
+    [System.Serializable]
+    public struct EndingDialog
+    {
+        public DialogData goodTpGoodGroup;
+        public DialogData goodTpBadGroup;
+        public DialogData badTpGoodGroup;
+        public DialogData badTpBadGroup;
+    }
     public int CurrentCycle { get; private set; } = 0;
 
     [SerializeField]
@@ -20,6 +30,12 @@ public class CycleManager : MonoBehaviour
 
     [SerializeField] 
     private GameObject backgroundClassMusic;
+
+    [SerializeField] 
+    private DialogData endingDialogBeginning;
+    
+    [SerializeField] 
+    private List<EndingDialog> endingDialogs;
 
     private IEnumerator DoCleaningGame()
     {
@@ -109,8 +125,37 @@ public class CycleManager : MonoBehaviour
             Debug.Log("New Cycle");
             CurrentCycle++;
         }
+
+        yield return endingDialogBeginning.Play();
+        bool tpGood = playerStats.Get("TpScore") >= 75f;
+        bool groupGood = playerStats.Get("GroupScore") >= 75f;
+        var dialogs = endingDialogs[(int)playerStats.Get("Group")];
+
+        DialogData toPlay;
+        if (tpGood)
+        {
+            if (groupGood)
+            {
+                toPlay = dialogs.goodTpGoodGroup;
+            }
+            else
+            {
+                toPlay = dialogs.goodTpBadGroup;
+            }
+        }
+        else
+        {
+            if (groupGood)
+            {
+                toPlay = dialogs.badTpGoodGroup;
+            }
+            else
+            {
+                toPlay = dialogs.badTpBadGroup;
+            }
+        }
         
-        Debug.Log("END");
-        Debug.Log($"Group Score: {playerStats.Get("GroupScore")} |  TpScore: {playerStats.Get("TpScore")}");
+        yield return toPlay.Play();
+        SceneManager.LoadScene("Scenes/WelcomeMenu");
     }
 }
