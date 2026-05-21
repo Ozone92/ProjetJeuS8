@@ -36,10 +36,15 @@ public class BalanceMiniGameManager : MonoBehaviour
     private bool gameRunning;
     public bool gameEnded;
     private bool wasStable = true;
+    private bool waitingForNextButton;
+    private TextMeshProUGUI startButtonLabel;
+    private TextMeshProUGUI startInstructionsText;
+    private const string StartInstructions = "Gardez les deux barres dans la zone verte.\nA/D controle la barre de gauche, <- et -> controle la barre de droite.";
 
     private void Awake()
     {
         EnsurePlayableUi();
+        CacheStartScreenTexts();
     }
 
     private void Start()
@@ -47,6 +52,8 @@ public class BalanceMiniGameManager : MonoBehaviour
         remainingTime = gameDuration;
         score = startScore;
         UpdateTexts("Pret ?");
+        SetStartButtonText("START");
+        SetStartInstructions(StartInstructions);
 
         if (startScreen)
         {
@@ -102,6 +109,12 @@ public class BalanceMiniGameManager : MonoBehaviour
 
     public void StartGame()
     {
+        if (waitingForNextButton)
+        {
+            ConfirmEndGame();
+            return;
+        }
+
         if (gameRunning)
         {
             return;
@@ -122,6 +135,10 @@ public class BalanceMiniGameManager : MonoBehaviour
 
     private IEnumerator StartSequence()
     {
+        waitingForNextButton = false;
+        SetStartButtonText("START");
+        SetStartInstructions(StartInstructions);
+
         if (startScreen)
         {
             startScreen.SetActive(false);
@@ -162,8 +179,8 @@ public class BalanceMiniGameManager : MonoBehaviour
 
     private void EndGame()
     {
-        gameEnded = true;
         gameRunning = false;
+        waitingForNextButton = true;
 
         if (firstBar)
         {
@@ -180,6 +197,30 @@ public class BalanceMiniGameManager : MonoBehaviour
         if (endScreen)
         {
             endScreen.SetActive(true);
+        }
+
+        SetStartButtonText("SUIVANT");
+        SetStartInstructions("Score final : " + score);
+
+        if (startScreen)
+        {
+            startScreen.SetActive(true);
+        }
+    }
+
+    private void ConfirmEndGame()
+    {
+        waitingForNextButton = false;
+        gameEnded = true;
+
+        if (startScreen)
+        {
+            startScreen.SetActive(false);
+        }
+
+        if (endScreen)
+        {
+            endScreen.SetActive(false);
         }
     }
 
@@ -258,6 +299,45 @@ public class BalanceMiniGameManager : MonoBehaviour
         if (!startScreen)
         {
             startScreen = CreateStartButton(canvas.transform);
+        }
+    }
+
+    private void CacheStartScreenTexts()
+    {
+        if (!startScreen)
+        {
+            return;
+        }
+
+        Button startButton = startScreen.GetComponentInChildren<Button>(true);
+        if (startButton)
+        {
+            startButtonLabel = startButton.GetComponentInChildren<TextMeshProUGUI>(true);
+        }
+
+        foreach (TextMeshProUGUI text in startScreen.GetComponentsInChildren<TextMeshProUGUI>(true))
+        {
+            if (text != startButtonLabel)
+            {
+                startInstructionsText = text;
+                break;
+            }
+        }
+    }
+
+    private void SetStartButtonText(string text)
+    {
+        if (startButtonLabel)
+        {
+            startButtonLabel.text = text;
+        }
+    }
+
+    private void SetStartInstructions(string text)
+    {
+        if (startInstructionsText)
+        {
+            startInstructionsText.text = text;
         }
     }
 
@@ -392,7 +472,7 @@ public class BalanceMiniGameManager : MonoBehaviour
         instructionRect.offsetMax = new Vector2(-28f, -18f);
 
         TextMeshProUGUI instructions = instructionObject.GetComponent<TextMeshProUGUI>();
-        instructions.text = "Gardez les deux barres dans la zone verte.\nA/D controle la barre de gauche, <- et -> controle la barre de droite.";
+        instructions.text = StartInstructions;
         instructions.fontSize = 34f;
         instructions.color = Color.white;
         instructions.alignment = TextAlignmentOptions.Center;
@@ -457,7 +537,7 @@ public class BalanceMiniGameManager : MonoBehaviour
 
     private string GetFinalMessage()
     {
-        if (score >= 80)
+        if (score >= 70)
         {
             return "Bien joue";
         }
@@ -467,6 +547,11 @@ public class BalanceMiniGameManager : MonoBehaviour
             return "Pas mal";
         }
 
-        return "Peut mieux faire";
+        if (score >= 30)
+        {
+            return "Moyen";
+        }
+
+        return "Peut\u00A0mieux\u00A0faire";
     }
 }

@@ -73,7 +73,6 @@ public class CycleManager : MonoBehaviour
         playerStats.Add("GroupScore", toAdd);
         playerStats.Add("TpScore", toAdd);
         
-        yield return new WaitForSecondsRealtime(2f);
         Destroy(miniJeuManager.gameObject);
     }
 
@@ -93,7 +92,6 @@ public class CycleManager : MonoBehaviour
         playerStats.Add("GroupScore", toAdd);
         playerStats.Add("TpScore", toAdd);
         
-        yield return new WaitForSecondsRealtime(2f);
         Destroy(balanceMiniGameManager.gameObject);
     }
 
