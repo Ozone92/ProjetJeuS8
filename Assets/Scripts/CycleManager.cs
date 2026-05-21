@@ -52,21 +52,17 @@ public class CycleManager : MonoBehaviour
         {
             toAdd = -4;
         }
-        else if (score >= 60)
+        else if (score >= 50)
         {
             toAdd = 10;
         }
-        else if (score >= 50)
+        else if (score >= 40)
         {
             toAdd = 7;
         }
-        else if (score >= 40)
-        {
-            toAdd = 5;
-        }
         else if (score >= 30)
         {
-            toAdd = 3;
+            toAdd = 5;
         }
         
         if (playerStats.Get("DoMinigame2") != 0f)
