@@ -37,7 +37,7 @@ MonoBehaviour:
       idToGo: Your
       statsToChange:
       - name: GroupScore
-        amount: -15
+        amount: -12
       - name: TpScore
         amount: 15
       - name: CycleFinish1
@@ -80,11 +80,7 @@ MonoBehaviour:
     useSpecificCameraTransform: 0
     cameraPosition: {x: -0.146, y: 0.16, z: 0.18}
     cameraRotation: {x: 0, y: 180, z: 0}
-    choices:
-    - text: 
-      idToGo: Other3
-      statsToChange: []
-      minimalCondition: []
+    choices: []
   - id: Your
     speaker: Walter
     text: "C\u2019est bien de nous faire confiance, c\u2019est important la confiance

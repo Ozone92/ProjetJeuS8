@@ -27,7 +27,7 @@ MonoBehaviour:
       minimalCondition: []
   - id: HB1
     speaker: Speed
-    text: '*leve les yeux du tel* '
+    text: '*leve les yeux de son tel* '
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: 0, y: 0, z: 0}

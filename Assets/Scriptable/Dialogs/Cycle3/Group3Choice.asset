@@ -145,14 +145,14 @@ MonoBehaviour:
       minimalCondition: []
   - id: Other4
     speaker: Vous
-    text: "Du calme, je n\u2019ai pas encore vieux comme toi"
+    text: Du calme, je suisi pas encore vieux comme toi
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
     cameraPosition: {x: -0.013, y: 0.171, z: 0.064}
     cameraRotation: {x: 0, y: 180, z: 0}
     choices:
-    - text: Other5
-      idToGo: 
+    - text: 
+      idToGo: Other5
       statsToChange: []
       minimalCondition: []
   - id: Other5

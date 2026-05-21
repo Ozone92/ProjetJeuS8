@@ -541,7 +541,7 @@ MonoBehaviour:
   loseStableTimeWhenUnstable: 1
   unstablePenaltySpeed: 1.5
   startScore: 100
-  unstableScorePenaltyInterval: 0.25
+  unstableScorePenaltyInterval: 0.34
   unstableScorePenalty: 1
   returnSceneName: SampleScene
   score: 0

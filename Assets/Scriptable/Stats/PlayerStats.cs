@@ -18,7 +18,14 @@ public class PlayerStats : ScriptableObject
         // Debug.Log($"Stats Add: {key}: {value}");
         if (!Stats.TryAdd(key, value))
         {
-            Stats[key] += value;
+            if (Stats[key] + value > 100)
+            {
+                Stats[key] = 100;
+            }
+            else
+            {
+                Stats[key] += value;
+            }
         }
     }
 

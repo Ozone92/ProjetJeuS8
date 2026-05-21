@@ -82,7 +82,7 @@ MonoBehaviour:
       statsToChange: []
       minimalCondition: []
   - id: Your3
-    speaker: Vous
+    speaker: Renji
     text: "Faites moi confiance pour une fois, vraiment j\u2019ai eu un \xE9clair
       de g\xE9nie"
     useDefaultCameraTransform: 0

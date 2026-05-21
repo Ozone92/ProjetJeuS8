@@ -46,15 +46,15 @@ public class CycleManager : MonoBehaviour
         int toAdd = 0;
         if (score < 20)
         {
-            toAdd = -10;
+            toAdd = -8;
         }
         else if (score < 25)
         {
-            toAdd = -7;
+            toAdd = -4;
         }
         else if (score >= 60)
         {
-            toAdd = 9;
+            toAdd = 10;
         }
         else if (score >= 50)
         {
@@ -73,8 +73,8 @@ public class CycleManager : MonoBehaviour
         {
             toAdd *= 3;
         }
-                
-        playerStats.Add("GroupScore", toAdd/2);
+        
+        playerStats.Add("GroupScore", toAdd);
         playerStats.Add("TpScore", toAdd);
         
         yield return new WaitForSecondsRealtime(2f);
@@ -88,13 +88,13 @@ public class CycleManager : MonoBehaviour
 
         int toAdd = balanceMiniGameManager.score switch
         {
-            >= 70 => 15,
-            >= 60 => 10,
-            >= 40 => 5,
+            >= 70 => 18,
+            >= 50 => 13,
+            >= 30 => 7,
             _ => -15
         };
 
-        playerStats.Add("GroupScore", toAdd/2);
+        playerStats.Add("GroupScore", toAdd);
         playerStats.Add("TpScore", toAdd);
         
         yield return new WaitForSecondsRealtime(2f);
@@ -135,7 +135,7 @@ public class CycleManager : MonoBehaviour
         yield return endingDialogBeginning.Play();
         bool tpGood = playerStats.Get("TpScore") >= 75f;
         bool groupGood = playerStats.Get("GroupScore") >= 75f;
-        var dialogs = endingDialogs[(int)playerStats.Get("Group")];
+        var dialogs = endingDialogs[(int)playerStats.Get("Group") - 1];
 
         DialogData toPlay;
         if (tpGood)

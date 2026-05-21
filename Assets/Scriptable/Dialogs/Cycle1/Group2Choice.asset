@@ -49,7 +49,7 @@ MonoBehaviour:
       idToGo: Other
       statsToChange:
       - name: GroupScore
-        amount: -15
+        amount: -12
       - name: TpScore
         amount: 20
       - name: CycleFinish1

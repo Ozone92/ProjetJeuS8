@@ -40,7 +40,7 @@ MonoBehaviour:
       minimalCondition: []
   - id: Rival1
     speaker: Xiao
-    text: "e suis s\xFBr qu\u2019il nettoyait quand m\xEAme mieux que toi. je pr\xE9f\xE8re
+    text: "Je suis s\xFBr qu\u2019il nettoyait quand m\xEAme mieux que toi. je pr\xE9f\xE8re
       que ce soit lui que toi"
     useDefaultCameraTransform: 0
     useSpecificCameraTransform: 0
@@ -112,7 +112,7 @@ MonoBehaviour:
       idToGo: Bum_Vous1
       statsToChange:
       - name: GroupScore
-        amount: 18
+        amount: 17
       - name: TpScore
         amount: 10
       minimalCondition: []
@@ -120,7 +120,7 @@ MonoBehaviour:
       idToGo: Rival_Vous1
       statsToChange:
       - name: GroupScore
-        amount: -15
+        amount: -12
       - name: TpScore
         amount: 15
       minimalCondition: []

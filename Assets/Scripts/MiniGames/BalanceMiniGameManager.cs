@@ -25,7 +25,7 @@ public class BalanceMiniGameManager : MonoBehaviour
     [SerializeField] private bool loseStableTimeWhenUnstable = true;
     [SerializeField] private float unstablePenaltySpeed = 1.5f;
     [SerializeField] private int startScore = 100;
-    [SerializeField] private float unstableScorePenaltyInterval = 0.25f;
+    [SerializeField] private float unstableScorePenaltyInterval = 0.34f;
     [SerializeField] private int unstableScorePenalty = 1;
     [SerializeField] private string returnSceneName = "SampleScene";
 

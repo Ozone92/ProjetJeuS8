@@ -106,9 +106,9 @@ MonoBehaviour:
       idToGo: Nerd_Vous1
       statsToChange:
       - name: GroupScore
-        amount: -25
+        amount: -15
       - name: TpScore
-        amount: 21
+        amount: 20
       minimalCondition: []
     - text: Vous
       idToGo: Vous_Vous1
