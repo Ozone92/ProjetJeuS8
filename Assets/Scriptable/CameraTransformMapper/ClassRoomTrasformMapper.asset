@@ -13,25 +13,25 @@ MonoBehaviour:
   m_Name: ClassRoomTrasformMapper
   m_EditorClassIdentifier: Assembly-CSharp::CameraTransformMapper
   items:
-  - key: Professeur
+  - key: Professeur T
     position: {x: 0.065, y: 0.171, z: -0.235}
     rotation: {x: 0, y: 0, z: 0}
-  - key: Nerd
+  - key: Uryu
     position: {x: -0.032, y: 0.1556, z: 0.5145}
     rotation: {x: 0, y: 180, z: 0}
-  - key: HB
+  - key: Speed
     position: {x: -0.128, y: 0.171, z: 0.384}
     rotation: {x: 0, y: 180, z: 0}
-  - key: Rival
+  - key: Xiao
     position: {x: 0.193, y: 0.171, z: 0.283}
     rotation: {x: 0, y: 180, z: 0}
-  - key: Bum
+  - key: Renji
     position: {x: 0.32, y: 0.17, z: 0.3}
     rotation: {x: 0, y: 180, z: 0}
-  - key: Cousin
+  - key: Titouan
     position: {x: -0.146, y: 0.16, z: 0.18}
     rotation: {x: 0, y: 180, z: 0}
-  - key: Vieux
+  - key: Walter
     position: {x: -0.013, y: 0.171, z: 0.064}
     rotation: {x: 0, y: 180, z: 0}
   - key: Vous
