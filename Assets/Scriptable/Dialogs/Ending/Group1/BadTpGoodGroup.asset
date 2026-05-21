@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47e8c251aa9a4d95ca6b84096cf8588c, type: 3}
+  m_Name: BadTpGoodGroup
+  m_EditorClassIdentifier: Assembly-CSharp::DialogData
+  dialogs:
+  - id: Begin
+    speaker: Professeur T
+    text: "Bon, vous \xEAtes des babouins mais des babouins sympas."
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
+    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraRotation: {x: 0, y: 0, z: 0}
+    choices:
+    - text: 
+      idToGo: Prof2
+      statsToChange: []
+      minimalCondition: []
+  - id: Prof2
+    speaker: Professeur T
+    text: "Vous ne savez pas suivre des instructions mais au moins vous avez grandi
+      ensemble \xE0 travers cet exercice."
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
+    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraRotation: {x: 0, y: 0, z: 0}
+    choices:
+    - text: 
+      idToGo: Nerd1
+      statsToChange: []
+      minimalCondition: []
+  - id: Nerd1
+    speaker: Uryu
+    text: "J\u2019imagine que ma moyenne peut se permettre de tanker cette note."
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
+    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraRotation: {x: 0, y: 0, z: 0}
+    choices:
+    - text: 
+      idToGo: Vous1
+      statsToChange: []
+      minimalCondition: []
+  - id: Vous1
+    speaker: Vous
+    text: "En vrai on s\u2019est bien amus\xE9, on pourrait remettre \xE7a au prochain
+      tp."
+    useDefaultCameraTransform: 0
+    useSpecificCameraTransform: 0
+    cameraPosition: {x: 0, y: 0, z: 0}
+    cameraRotation: {x: 0, y: 0, z: 0}
+    choices: []
+  dialogBoxPrefab: {fileID: -4762232498145539390, guid: cab5af825cf7e2b7aa72d0051b9ef9a0, type: 3}
+  playerStats: {fileID: 11400000, guid: 9f2f0ae3b15e67cdd9a60f8a24eafe79, type: 2}
+  defaultCameraPosition: {x: 0, y: 0, z: 0}
+  defaultCameraRotation: {x: 0, y: 0, z: 0}
+  cameraTransformMapper: {fileID: 11400000, guid: 5e1cc460f09bac7738b0590e54fc3b15, type: 2}
