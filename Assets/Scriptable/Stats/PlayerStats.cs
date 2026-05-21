@@ -9,7 +9,7 @@ public class PlayerStats : ScriptableObject
     public float Get(string key)
     {
         // Debug.Log($"Stats Get: {key}: {Stats.GetValueOrDefault(key, 0f)}");
-        
+
         return Stats.GetValueOrDefault(key, 0f);
     }
 
@@ -29,7 +29,12 @@ public class PlayerStats : ScriptableObject
         }
     }
 
-    // Debug purpose
+    public void Reset()
+    {
+        Stats.Clear();
+    }
+
+// Debug purpose
     public void Print()
     {
         foreach (var s in Stats)

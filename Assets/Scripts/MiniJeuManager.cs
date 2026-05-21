@@ -27,16 +27,23 @@ public class MiniJeuManager : MonoBehaviour
     private float tempsRestant = 20f;
     private bool jeuEnCours = false;
     private bool jeuTermine = false;
+    private bool finEnAttente = false;
+    private bool sequenceDemarrageEnCours = false;
+    private TextMeshProUGUI texteBoutonPrincipal;
+    private TextMeshProUGUI texteExplicationContent;
 
     private void Awake()
     {
         Instance = this;
+        texteBoutonPrincipal = ecranDemarrage != null ? ecranDemarrage.GetComponentInChildren<TextMeshProUGUI>(true) : null;
+        texteExplicationContent = texteExplication != null ? texteExplication.GetComponentInChildren<TextMeshProUGUI>(true) : null;
     }
 
     private void Start()
     {
         scoreText.text = "Score : 0";
         timerText.text = "Prêt ?";
+        SetButtonText("START");
         ecranDemarrage.SetActive(true);
         if (texteExplication != null)
         {
@@ -46,11 +53,23 @@ public class MiniJeuManager : MonoBehaviour
 
     public void DemarrerJeu()
     {
+        if (finEnAttente)
+        {
+            ConfirmerFin();
+            return;
+        }
+
+        if (jeuEnCours || sequenceDemarrageEnCours)
+        {
+            return;
+        }
+
         StartCoroutine(SequenceDeDemarrage());
     }
 
     IEnumerator SequenceDeDemarrage()
     {
+        sequenceDemarrageEnCours = true;
         ecranDemarrage.SetActive(false);
         if (texteExplication != null)
         {
@@ -69,6 +88,7 @@ public class MiniJeuManager : MonoBehaviour
         timerText.text = "GO !";
         yield return new WaitForSeconds(0.5f);
 
+        sequenceDemarrageEnCours = false;
         LancerPartie();
     }
 
@@ -97,7 +117,7 @@ public class MiniJeuManager : MonoBehaviour
 
     public void FaireApparaitreTache()
     {
-        if (JeuTermine) return;
+        if (JeuTermine || jeuTermine) return;
 
         GameObject nouvelleTache = Instantiate(prefabTache, zoneDeSpawn);
         RectTransform rectTache = nouvelleTache.GetComponent<RectTransform>();
@@ -126,14 +146,68 @@ public class MiniJeuManager : MonoBehaviour
 
     private void FinDuJeu()
     {
-        JeuTermine = true;
+        jeuTermine = true;
+        jeuEnCours = false;
+        finEnAttente = true;
         tempsRestant = 0;
-        timerText.text = "Terminé !";
+        timerText.text = GetFinalMessage();
+        SetButtonText("SUIVANT");
+        ecranDemarrage.SetActive(true);
+
+        if (texteExplicationContent != null)
+        {
+            texteExplicationContent.text = "Score final : " + Score;
+        }
+
+        if (texteExplication != null)
+        {
+            texteExplication.SetActive(true);
+        }
 
         foreach (Transform child in zoneDeSpawn) {
             Destroy(child.gameObject);
         }
 
         Debug.Log("Score final : " + Score);
+    }
+
+    private void ConfirmerFin()
+    {
+        finEnAttente = false;
+        JeuTermine = true;
+        ecranDemarrage.SetActive(false);
+
+        if (texteExplication != null)
+        {
+            texteExplication.SetActive(false);
+        }
+    }
+
+    private string GetFinalMessage()
+    {
+        if (Score >= 50)
+        {
+            return "Excellent";
+        }
+
+        if (Score >= 30)
+        {
+            return "Bien joue";
+        }
+
+        if (Score >= 20)
+        {
+            return "Moyen";
+        }
+
+        return "Peut\u00A0mieux\u00A0faire";
+    }
+
+    private void SetButtonText(string text)
+    {
+        if (texteBoutonPrincipal != null)
+        {
+            texteBoutonPrincipal.text = text;
+        }
     }
 }

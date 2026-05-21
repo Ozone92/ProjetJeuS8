@@ -1067,6 +1067,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
   PlayButton: {fileID: 1039338533}
   QuitButton: {fileID: 2065352829}
+  stats: {fileID: 11400000, guid: 9f2f0ae3b15e67cdd9a60f8a24eafe79, type: 2}
 --- !u!4 &1275408319
 Transform:
   m_ObjectHideFlags: 0
